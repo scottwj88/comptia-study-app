@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="CompTIA A+ 2026 刷题神器", page_icon="🛡️", layout="centered")
 
 # --- 2. 加载数据函数 ---
-@st.cache_data
+#@st.cache_data
 def load_questions():
     # 尝试加载本地 json 文件
     if os.path.exists('questions.json'):
