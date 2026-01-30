@@ -1,11 +1,43 @@
 [
     {
+        "id": 1,
+        "category": "Core 1 (220-1201) - Networking",
+        "question": "A user wants to utilize the new Wi-Fi 6E standard to reduce interference. Which frequency band must their device support?",
+        "options": ["2.4 GHz", "5 GHz", "6 GHz", "60 GHz"],
+        "answer": "6 GHz",
+        "explanation": "According to the CompTIA 220-1201 objectives, Wi-Fi 6E introduces the 6 GHz frequency band to provide more channels and less interference."
+    },
+    {
+        "id": 2,
+        "category": "Core 2 (220-1202) - Security",
+        "question": "You have identified and quarantined a PC infected with malware. According to the CompTIA malware removal process, what is the IMMEDIATE next step?",
+        "options": ["Update anti-malware software", "Disable System Restore", "Educate the end user", "Schedule scans"],
+        "answer": "Disable System Restore",
+        "explanation": "The 7-step malware removal process (Objective 2.6) requires disabling System Restore (step 3) after quarantine to prevent the malware from being saved in a restore point."
+    },
+    {
+        "id": 3,
+        "category": "Core 1 (220-1201) - Hardware",
+        "question": "Which connector type is typically used for a wired network connection (Ethernet)?",
+        "options": ["RJ11", "RJ45", "USB-C", "Thunderbolt"],
+        "answer": "RJ45",
+        "explanation": "RJ45 is the standard connector for twisted pair Ethernet cables (Objective 3.2). RJ11 is for telephone lines."
+    },
+    {
+        "id": 4,
+        "category": "Core 2 (220-1202) - Software Troubleshooting",
+        "question": "A Windows 10 user reports their computer frequently freezes. You suspect a failing RAM module. Which built-in tool should you use?",
+        "options": ["Disk Management", "Windows Memory Diagnostic", "DirectX Diagnostic Tool", "Defragment and Optimize Drives"],
+        "answer": "Windows Memory Diagnostic",
+        "explanation": "Windows Memory Diagnostic (mdsched.exe) is the built-in tool specifically designed to test RAM for errors."
+    },
+    {
         "id": 101,
         "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
         "question": "A user needs to charge a new laptop and connect a 4K monitor using a single cable. Which interface should you recommend?",
         "options": ["USB-C with Thunderbolt 4", "HDMI 2.1", "DisplayPort 1.4", "Micro-USB"],
         "answer": "USB-C with Thunderbolt 4",
-        [cite_start]"explanation": "Thunderbolt 4 / USB-C supports high-speed data, video output, and power delivery (charging) simultaneously[cite: 289, 310]."
+        "explanation": "Thunderbolt 4 / USB-C supports high-speed data, video output, and power delivery (charging) simultaneously."
     },
     {
         "id": 102,
@@ -13,7 +45,7 @@
         "question": "You are setting up a Wi-Fi network in a dense apartment complex. To utilize the least congested frequency band introduced in Wi-Fi 6E, which band should you configure?",
         "options": ["2.4 GHz", "5 GHz", "6 GHz", "900 MHz"],
         "answer": "6 GHz",
-        [cite_start]"explanation": "Wi-Fi 6E extends Wi-Fi 6 capabilities into the 6 GHz frequency band, offering more channels and less interference[cite: 139]."
+        "explanation": "Wi-Fi 6E extends Wi-Fi 6 capabilities into the 6 GHz frequency band, offering more channels and less interference."
     },
     {
         "id": 103,
@@ -21,7 +53,7 @@
         "question": "Which port number must be open on a firewall to allow secure remote access via SSH?",
         "options": ["21", "22", "23", "3389"],
         "answer": "22",
-        [cite_start]"explanation": "SSH (Secure Shell) uses port 22. Port 23 is Telnet (unsecure), and 3389 is RDP[cite: 120]."
+        "explanation": "SSH (Secure Shell) uses port 22. Port 23 is Telnet (unsecure), and 3389 is RDP."
     },
     {
         "id": 104,
@@ -29,7 +61,7 @@
         "question": "A gamer wants to upgrade their display to get the deepest blacks and highest contrast ratio without a backlight. Which technology should they choose?",
         "options": ["IPS LCD", "TN LCD", "OLED", "VA LCD"],
         "answer": "OLED",
-        [cite_start]"explanation": "OLED (Organic Light-emitting Diode) displays use self-emissive pixels, allowing for true blacks and high contrast, unlike LCDs which use backlights[cite: 263]."
+        "explanation": "OLED (Organic Light-emitting Diode) displays use self-emissive pixels, allowing for true blacks and high contrast, unlike LCDs which use backlights."
     },
     {
         "id": 105,
@@ -37,7 +69,7 @@
         "question": "Which RAID configuration provides both striping and mirroring, requiring at least four drives?",
         "options": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
         "answer": "RAID 10",
-        [cite_start]"explanation": "RAID 10 (or 1+0) combines the speed of striping (RAID 0) with the redundancy of mirroring (RAID 1)[cite: 344]."
+        "explanation": "RAID 10 (or 1+0) combines the speed of striping (RAID 0) with the redundancy of mirroring (RAID 1)."
     },
     {
         "id": 106,
@@ -45,7 +77,7 @@
         "question": "A company wants to develop applications without managing the underlying operating system or hardware. They only want to manage their data and code. Which cloud model fits this need?",
         "options": ["SaaS", "IaaS", "PaaS", "DaaS"],
         "answer": "PaaS",
-        [cite_start]"explanation": "Platform as a Service (PaaS) provides the development environment (OS, database, web server) managed by the provider, leaving the customer to manage only the application[cite: 489]."
+        "explanation": "Platform as a Service (PaaS) provides the development environment (OS, database, web server) managed by the provider, leaving the customer to manage only the application."
     },
     {
         "id": 107,
@@ -53,7 +85,7 @@
         "question": "A laser printer is producing pages with a repeating vertical black line. What is the most likely cause?",
         "options": ["Low toner", "Damaged imaging drum", "Clogged print head", "Wrong paper type"],
         "answer": "Damaged imaging drum",
-        "explanation": "A scratch on the imaging drum often causes a repetitive vertical mark on every page. [cite_start]Clogged print heads are an inkjet issue[cite: 443]."
+        "explanation": "A scratch on the imaging drum often causes a repetitive vertical mark on every page. Clogged print heads are an inkjet issue."
     },
     {
         "id": 108,
@@ -61,7 +93,7 @@
         "question": "Which DNS record type is used to map a hostname to an IPv6 address?",
         "options": ["A", "AAAA", "CNAME", "MX"],
         "answer": "AAAA",
-        [cite_start]"explanation": "An 'A' record is for IPv4, while an 'AAAA' record is used for IPv6 addresses[cite: 178]."
+        "explanation": "An 'A' record is for IPv4, while an 'AAAA' record is used for IPv6 addresses."
     },
     {
         "id": 109,
@@ -69,7 +101,7 @@
         "question": "You are installing memory in a server that requires protection against single-bit errors. Which type of RAM should you use?",
         "options": ["SODIMM", "Non-ECC", "ECC", "DDR4"],
         "answer": "ECC",
-        [cite_start]"explanation": "Error-correcting code (ECC) RAM can detect and correct common data corruption, essential for servers[cite: 319]."
+        "explanation": "Error-correcting code (ECC) RAM can detect and correct common data corruption, essential for servers."
     },
     {
         "id": 110,
@@ -77,7 +109,7 @@
         "question": "A projector shuts down intermittently after 15 minutes of use. You notice a warning light. What is the most likely cause?",
         "options": ["Dead pixels", "Overheating", "Burn-in", "Incorrect resolution"],
         "answer": "Overheating",
-        [cite_start]"explanation": "Intermittent shutdowns are a classic symptom of overheating, often caused by a blocked filter or failing fan[cite: 538, 544]."
+        "explanation": "Intermittent shutdowns are a classic symptom of overheating, often caused by a blocked filter or failing fan."
     },
     {
         "id": 111,
@@ -85,7 +117,7 @@
         "question": "Which storage form factor connects directly to the motherboard without cables and uses the NVMe protocol?",
         "options": ["3.5-inch HDD", "2.5-inch SSD", "M.2", "eSATA"],
         "answer": "M.2",
-        [cite_start]"explanation": "M.2 drives connect directly to the motherboard and often use the NVMe protocol for high speed[cite: 333, 340]."
+        "explanation": "M.2 drives connect directly to the motherboard and often use the NVMe protocol for high speed."
     },
     {
         "id": 112,
@@ -93,7 +125,7 @@
         "question": "A user cannot access the internet, and their IP address starts with 169.254.x.x. What does this indicate?",
         "options": ["The DHCP server is unreachable (APIPA)", "DNS resolution failure", "Duplicate IP conflict", "IPv6 is enabled"],
         "answer": "The DHCP server is unreachable (APIPA)",
-        [cite_start]"explanation": "An address in the 169.254.x.x range is an APIPA (Automatic Private IP Addressing) address, indicating the device could not contact a DHCP server[cite: 220]."
+        "explanation": "An address in the 169.254.x.x range is an APIPA (Automatic Private IP Addressing) address, indicating the device could not contact a DHCP server."
     },
     {
         "id": 113,
@@ -101,7 +133,7 @@
         "question": "Which component in a laptop is responsible for converting DC power to AC power for the screen's backlight (on older LCDs)?",
         "options": ["Digitizer", "Inverter", "Rectifier", "Capacitor"],
         "answer": "Inverter",
-        [cite_start]"explanation": "The inverter converts DC power from the motherboard to AC power required by CCFL backlights in older LCDs[cite: 265]."
+        "explanation": "The inverter converts DC power from the motherboard to AC power required by CCFL backlights in older LCDs."
     },
     {
         "id": 114,
@@ -109,7 +141,7 @@
         "question": "Which type of hypervisor runs directly on the hardware without a host operating system?",
         "options": ["Type 1", "Type 2", "Container", "Sandbox"],
         "answer": "Type 1",
-        "explanation": "Type 1 hypervisors (bare-metal) run directly on the hardware. [cite_start]Type 2 runs as an application on top of an OS[cite: 479]."
+        "explanation": "Type 1 hypervisors (bare-metal) run directly on the hardware. Type 2 runs as an application on top of an OS."
     },
     {
         "id": 115,
@@ -117,7 +149,7 @@
         "question": "You need to verify the voltage output of a power supply unit (PSU). Which tool should you use?",
         "options": ["Loopback plug", "Multimeter", "Cable tester", "Tone generator"],
         "answer": "Multimeter",
-        [cite_start]"explanation": "A multimeter is used to measure electrical properties like voltage, current, and resistance[cite: 678]."
+        "explanation": "A multimeter is used to measure electrical properties like voltage, current, and resistance."
     },
     {
         "id": 201,
@@ -125,7 +157,7 @@
         "question": "Which hardware requirement is mandatory for installing Windows 11 to support security features like BitLocker?",
         "options": ["TPM 2.0", "16GB RAM", "Thunderbolt 4", "M.2 SSD"],
         "answer": "TPM 2.0",
-        [cite_start]"explanation": "Windows 11 requires a Trusted Platform Module (TPM) 2.0 for enhanced security features[cite: 818]."
+        "explanation": "Windows 11 requires a Trusted Platform Module (TPM) 2.0 for enhanced security features."
     },
     {
         "id": 202,
@@ -133,7 +165,7 @@
         "question": "In Linux, which command is used to change the ownership of a file?",
         "options": ["chmod", "chown", "grep", "ps"],
         "answer": "chown",
-        "explanation": "'chown' stands for 'change owner'. [cite_start]'chmod' changes permissions[cite: 984]."
+        "explanation": "'chown' stands for 'change owner'. 'chmod' changes permissions."
     },
     {
         "id": 203,
@@ -141,7 +173,7 @@
         "question": "A user scans a QR code on a parking meter which directs them to a fake payment site. What type of attack is this?",
         "options": ["Vishing", "Tailgating", "QR code phishing", "Whaling"],
         "answer": "QR code phishing",
-        [cite_start]"explanation": "This is a specific form of phishing involving malicious QR codes, also known as 'Quishing'[cite: 1190]."
+        "explanation": "This is a specific form of phishing involving malicious QR codes, also known as 'Quishing'."
     },
     {
         "id": 204,
@@ -149,7 +181,7 @@
         "question": "According to the CompTIA malware removal procedure, what should you do immediately after quarantining an infected system?",
         "options": ["Educate the user", "Disable System Restore", "Update antivirus definitions", "Reimage the machine"],
         "answer": "Disable System Restore",
-        [cite_start]"explanation": "Step 3 of the malware removal process is to disable System Restore to prevent the malware from saving itself in a backup point[cite: 1223]."
+        "explanation": "Step 3 of the malware removal process is to disable System Restore to prevent the malware from saving itself in a backup point."
     },
     {
         "id": 205,
@@ -157,7 +189,7 @@
         "question": "Which file extension is associated with a PowerShell script?",
         "options": [".bat", ".sh", ".ps1", ".py"],
         "answer": ".ps1",
-        [cite_start]"explanation": ".ps1 is the standard file extension for Windows PowerShell scripts[cite: 1513]."
+        "explanation": ".ps1 is the standard file extension for Windows PowerShell scripts."
     },
     {
         "id": 206,
@@ -165,7 +197,7 @@
         "question": "A Windows user sees a 'Blue Screen of Death' (BSOD). Which tool can help you analyze the logs to find the cause?",
         "options": ["Disk Defragmenter", "Event Viewer", "Task Manager", "Registry Editor"],
         "answer": "Event Viewer",
-        [cite_start]"explanation": "Event Viewer (eventvwr.msc) logs system errors, including critical failures that cause BSODs[cite: 832]."
+        "explanation": "Event Viewer (eventvwr.msc) logs system errors, including critical failures that cause BSODs."
     },
     {
         "id": 207,
@@ -173,7 +205,7 @@
         "question": "Which macOS feature allows for quick, small security updates without a full system restart?",
         "options": ["Time Machine", "Spotlight", "Rapid Security Response (RSR)", "Mission Control"],
         "answer": "Rapid Security Response (RSR)",
-        [cite_start]"explanation": "RSR is a feature in newer macOS versions that delivers important security improvements between software updates[cite: 947]."
+        "explanation": "RSR is a feature in newer macOS versions that delivers important security improvements between software updates."
     },
     {
         "id": 208,
@@ -181,7 +213,7 @@
         "question": "Which backup method backs up all files selected that have changed since the last FULL backup?",
         "options": ["Incremental", "Differential", "Full", "Copy"],
         "answer": "Differential",
-        "explanation": "A differential backup captures all data changed since the last full backup. [cite_start]Incremental captures changes since the last backup of ANY type[cite: 1442]."
+        "explanation": "A differential backup captures all data changed since the last full backup. Incremental captures changes since the last backup of ANY type."
     },
     {
         "id": 209,
@@ -189,7 +221,7 @@
         "question": "Which logical security measure adheres to the 'Principle of Least Privilege'?",
         "options": ["Biometric locks", "Restricting user permissions", "Installing a firewall", "Using a privacy screen"],
         "answer": "Restricting user permissions",
-        [cite_start]"explanation": "Restricting permissions ensures users only have access to what they need to do their job, the definition of least privilege[cite: 1086, 1240]."
+        "explanation": "Restricting permissions ensures users only have access to what they need to do their job, the definition of least privilege."
     },
     {
         "id": 210,
@@ -197,7 +229,7 @@
         "question": "You need to partition a hard drive larger than 2TB in Windows. Which partition style must you use?",
         "options": ["MBR", "GPT", "FAT32", "NTFS"],
         "answer": "GPT",
-        [cite_start]"explanation": "GUID Partition Table (GPT) supports drives larger than 2TB, whereas Master Boot Record (MBR) has a 2TB limit[cite: 784]."
+        "explanation": "GUID Partition Table (GPT) supports drives larger than 2TB, whereas Master Boot Record (MBR) has a 2TB limit."
     },
     {
         "id": 211,
@@ -205,7 +237,7 @@
         "question": "When disposing of old hard drives containing sensitive customer data, which method ensures the data is unrecoverable?",
         "options": ["Standard formatting", "Deleting partitions", "Shredding/Drilling", "Reinstalling OS"],
         "answer": "Shredding/Drilling",
-        [cite_start]"explanation": "Physical destruction (Shredding or Drilling) is the most secure way to ensure data on a hard drive cannot be recovered [cite: 1272-1274]."
+        "explanation": "Physical destruction (Shredding or Drilling) is the most secure way to ensure data on a hard drive cannot be recovered."
     },
     {
         "id": 212,
@@ -213,7 +245,7 @@
         "question": "A user receives a text message claiming to be from their bank asking them to click a link to unlock their account. What is this called?",
         "options": ["Phishing", "Vishing", "Smishing", "Spam"],
         "answer": "Smishing",
-        [cite_start]"explanation": "Smishing is phishing conducted via SMS (text message)[cite: 1189]."
+        "explanation": "Smishing is phishing conducted via SMS (text message)."
     },
     {
         "id": 213,
@@ -221,7 +253,7 @@
         "question": "Which Windows command line tool is used to force a group policy update immediately?",
         "options": ["gpresult", "gpupdate", "chkdsk", "sfc"],
         "answer": "gpupdate",
-        "explanation": "'gpupdate' refreshes local and Active Directory-based Group Policy settings. [cite_start]'gpresult' only shows the settings[cite: 868]."
+        "explanation": "'gpupdate' refreshes local and Active Directory-based Group Policy settings. 'gpresult' only shows the settings."
     },
     {
         "id": 214,
@@ -229,7 +261,7 @@
         "question": "Which authentication factor falls under the category 'Something you are'?",
         "options": ["Password", "Smart Card", "Fingerprint", "GPS Location"],
         "answer": "Fingerprint",
-        "explanation": "Biometrics (Fingerprint, Face ID) are 'Something you are'. [cite_start]Passwords are 'Something you know', Smart Cards are 'Something you have'[cite: 1076]."
+        "explanation": "Biometrics (Fingerprint, Face ID) are 'Something you are'. Passwords are 'Something you know', Smart Cards are 'Something you have'."
     },
     {
         "id": 215,
@@ -237,6 +269,6 @@
         "question": "A mobile device battery is draining extremely fast, and the device feels hot even when not in use. What is the most likely cause?",
         "options": ["Cracked screen", "Malware running in background", "Full storage", "Failed biometric sensor"],
         "answer": "Malware running in background",
-        [cite_start]"explanation": "High resource usage by background malware often causes overheating and rapid battery drain[cite: 547]."
+        "explanation": "High resource usage by background malware often causes overheating and rapid battery drain."
     }
 ]
