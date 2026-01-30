@@ -510,5 +510,293 @@
         "options": ["Rubber gloves", "ESD wrist strap", "Safety goggles", "Wool sweater"],
         "answer": "ESD wrist strap",
         "explanation": "An Electrostatic Discharge (ESD) wrist strap grounds the technician to the case, preventing static shock from frying sensitive components."
+    },
+    {
+        "id": 400,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user reports that their laptop cursor is jumping around the screen randomly while they are typing. What is the MOST likely cause and solution?",
+        "options": ["Malware infection; run a virus scan", "Defective mouse driver; reinstall driver", "Accidental touchpad contact; disable touchpad while typing", "Corrupted OS; reimaging the laptop"],
+        "answer": "Accidental touchpad contact; disable touchpad while typing",
+        "explanation": "This is a common issue with laptops. The user's palms likely brush against the touchpad while typing. Disabling the touchpad or adjusting sensitivity fixes this."
+    },
+    {
+        "id": 401,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "You boot up a workstation and hear a loud clicking noise coming from the case. The system fails to boot into Windows and shows a 'No Boot Device Found' error. What should you replace?",
+        "options": ["System Fan", "Power Supply", "Mechanical Hard Drive (HDD)", "SSD"],
+        "answer": "Mechanical Hard Drive (HDD)",
+        "explanation": "The 'Click of Death' is a classic symptom of a mechanical hard drive (HDD) read/write head failure."
+    },
+    {
+        "id": 402,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A technician is setting up a Wi-Fi network for a cafe. They need to cover a large outdoor patio area. Speed is less important than range. Which frequency should they configure the access points to use primarily?",
+        "options": ["5 GHz", "6 GHz", "2.4 GHz", "60 GHz"],
+        "answer": "2.4 GHz",
+        "explanation": "2.4 GHz provides the longest range and best wall penetration, although it is slower than 5 GHz or 6 GHz."
+    },
+    {
+        "id": 403,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user's monitor displays strange artifacts and distorted colors. You check the connections and they are secure. You plug the monitor into another PC and it works fine. What is the likely culprit?",
+        "options": ["The Monitor Panel", "The HDMI Cable", "The Graphics Card (GPU) / Drivers", "The Power Supply"],
+        "answer": "The Graphics Card (GPU) / Drivers",
+        "explanation": "Since the monitor works on another PC, the monitor is fine. Artifacts usually point to a failing GPU or overheating video card."
+    },
+    {
+        "id": 404,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are building a virtualization server that will host 20 virtual machines. Which hardware component is the MOST critical to maximize?",
+        "options": ["High-end Sound Card", "RAM", "Graphics Card", "Power Supply Wattage"],
+        "answer": "RAM",
+        "explanation": "VMs consume significant amounts of RAM. If you run out of physical RAM, the VMs will slow down drastically or crash."
+    },
+    {
+        "id": 405,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A small office wants to ensure that if their main internet connection (Fiber) goes down, they automatically switch to a backup 5G connection. What feature should be configured on the router?",
+        "options": ["QoS", "Port Forwarding", "Failover", "VPN Passthrough"],
+        "answer": "Failover",
+        "explanation": "WAN Failover allows a router to switch to a secondary internet source automatically when the primary link fails."
+    },
+    {
+        "id": 406,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A projector in a conference room shuts down after exactly 2 minutes of use every time. You see a red LED warning light. What should you check first?",
+        "options": ["Replace the bulb", "Clean the air intake filter", "Adjust the resolution", "Change the HDMI cable"],
+        "answer": "Clean the air intake filter",
+        "explanation": "Timed shutdowns with warning lights usually indicate overheating. Blocked dust filters prevent cooling."
+    },
+    {
+        "id": 407,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are replacing a power supply unit (PSU). The new PSU has a modular cable design. What is the key advantage of this?",
+        "options": ["It provides more wattage", "It is cheaper", "Better airflow/cable management", "It supports 220V automatically"],
+        "answer": "Better airflow/cable management",
+        "explanation": "Modular PSUs allow you to attach only the cables you need, reducing clutter and improving airflow inside the case."
+    },
+    {
+        "id": 408,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A corporate user wants to read their encrypted work emails (S/MIME) on their mobile device. What must be installed on the device?",
+        "options": ["Antivirus", "A specific Digital Certificate", "A VPN client", "Biometric lock"],
+        "answer": "A specific Digital Certificate",
+        "explanation": "To read S/MIME encrypted emails, the private key (digital certificate) associated with the user must be installed on the device."
+    },
+    {
+        "id": 409,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A printer queue is backed up with 20 jobs. You try to delete them, but they are stuck. What is the best command to restart the printing service in Windows?",
+        "options": ["net stop spooler / net start spooler", "ipconfig /flushdns", "gpupdate /force", "chkdsk /f"],
+        "answer": "net stop spooler / net start spooler",
+        "explanation": "Restarting the Print Spooler service is the standard fix for stuck print queues."
+    },
+    {
+        "id": 410,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A user installed a new video driver and now Windows crashes with a BSOD immediately after login. What is the best way to fix this?",
+        "options": ["Reinstall Windows", "Boot into Safe Mode and roll back the driver", "Run Windows Memory Diagnostic", "Update the BIOS"],
+        "answer": "Boot into Safe Mode and roll back the driver",
+        "explanation": "Safe Mode loads minimal drivers. If the new driver is causing the crash, Safe Mode allows you to uninstall or roll it back."
+    },
+    {
+        "id": 411,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A technician needs to connect to a network share \\\\server\\finance and map it to drive letter Z: using the command line. Which command should they use?",
+        "options": ["net share", "net user", "net use", "nslookup"],
+        "answer": "net use",
+        "explanation": "'net use' is the command used to connect to, remove, and configure connections to shared resources, like mapping drives."
+    },
+    {
+        "id": 412,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user's browser homepage keeps changing to a gambling site, even after they change it back. They also see pop-ups when the browser is closed. What is the most likely cause?",
+        "options": ["Ransomware", "Adware / Spyware", "Rootkit", "Worm"],
+        "answer": "Adware / Spyware",
+        "explanation": "These are classic symptoms of Adware (serving ads) or Spyware (hijacking browser settings)."
+    },
+    {
+        "id": 413,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You are troubleshooting a CEO's laptop. While fixing it, you see a document on the desktop named 'Layoff_List_2026.docx'. What should you do?",
+        "options": ["Read it to see if you are on the list", "Copy it to a USB drive for backup", "Ignore it and maintain confidentiality", "Ask the CEO about it"],
+        "answer": "Ignore it and maintain confidentiality",
+        "explanation": "IT professionals must adhere to strict confidentiality. Do not access, copy, or discuss private data unless required for the repair."
+    },
+    {
+        "id": 414,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A Windows 10 computer fails to boot and says 'Boot Configuration Data is missing'. Which command in the Recovery Environment (WinRE) can fix this?",
+        "options": ["bootrec /rebuildbcd", "diskpart", "format c:", "sfc /scannow"],
+        "answer": "bootrec /rebuildbcd",
+        "explanation": "'bootrec' is the tool for fixing boot problems. '/rebuildbcd' scans for OS installations and rebuilds the BCD store."
+    },
+    {
+        "id": 415,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "You receive an email from 'HelpDesk' asking for your password to verify your account quota. The link goes to 'helpdesk-support-site.com' instead of your company domain. What attack is this?",
+        "options": ["Spear Phishing", "Zero-day", "Brute Force", "Man-in-the-middle"],
+        "answer": "Spear Phishing",
+        "explanation": "This is Phishing (specifically Spear Phishing if targeted). Legitimate IT support will NEVER ask for your password via email."
+    },
+    {
+        "id": 416,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "A user wants to run a script every Monday at 9 AM to back up their files. Which Windows tool is best for this?",
+        "options": ["Task Manager", "Task Scheduler", "Device Manager", "Performance Monitor"],
+        "answer": "Task Scheduler",
+        "explanation": "Task Scheduler allows you to automate tasks (like running scripts) at specific times or triggers."
+    },
+    {
+        "id": 417,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You are trying to delete a folder in Linux but get a 'Permission Denied' error. You are not logged in as root. What command allows you to run the delete command with elevated privileges?",
+        "options": ["chmod", "chown", "sudo", "pwd"],
+        "answer": "sudo",
+        "explanation": "Preceding a command with 'sudo' runs it with root/administrator privileges, assuming the user is in the sudoers list."
+    },
+    {
+        "id": 418,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "An Android user cannot install a specific app from the Google Play Store. They try to download the .APK file from a website instead. What setting must be enabled to install it?",
+        "options": ["Developer Mode", "Install from unknown sources", "USB Debugging", "Root access"],
+        "answer": "Install from unknown sources",
+        "explanation": "By default, Android blocks apps from outside the Play Store. Enabling 'Install from unknown sources' allows .APK installation."
+    },
+    {
+        "id": 419,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows 11 feature allows you to run a separate, isolated instance of Windows to safely test suspicious software?",
+        "options": ["Windows Sandbox", "Hyper-V", "BitLocker", "Remote Desktop"],
+        "answer": "Windows Sandbox",
+        "explanation": "Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Once closed, all software and files are deleted."
+    },
+    {
+        "id": 420,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A company requires that all mobile devices be able to be completely wiped if they are lost or stolen. What is this feature called?",
+        "options": ["Geofencing", "Remote Wipe", "Sideloading", "Containerization"],
+        "answer": "Remote Wipe",
+        "explanation": "Remote Wipe is a Mobile Device Management (MDM) feature that erases all data on a device over the cellular/Wi-Fi network."
+    },
+    {
+        "id": 421,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Before implementing a major patch on a production server, what should you do first according to Change Management best practices?",
+        "options": ["Install the patch immediately", "Create a rollback plan", "Inform the CEO", "Reboot the server"],
+        "answer": "Create a rollback plan",
+        "explanation": "You must always have a rollback plan (back-out plan) in case the change causes critical failure, so you can restore operations."
+    },
+    {
+        "id": 422,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user calls the help desk claiming to be the CFO and demands a password reset immediately because they have an urgent meeting. They sound angry. What social engineering tactic is this?",
+        "options": ["Urgency and Authority", "Familiarity", "Consensus", "Scarcity"],
+        "answer": "Urgency and Authority",
+        "explanation": "Social engineers often combine Authority (CFO role) and Urgency (urgent meeting) to pressure technicians into bypassing security protocols."
+    },
+    {
+        "id": 423,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A mobile device is suffering from extremely short battery life and high data usage. You suspect a specific app is mining cryptocurrency in the background. What is this malware called?",
+        "options": ["Ransomware", "Cryptominer", "Keylogger", "Boot sector virus"],
+        "answer": "Cryptominer",
+        "explanation": "Cryptominers use the device's CPU/GPU to mine crypto, causing overheating, battery drain, and slow performance."
+    },
+    {
+        "id": 424,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "You are terminating a Cat 6 cable into a patch panel. Which tool is designed to push the wire into the block and cut off the excess?",
+        "options": ["Crimper", "Punchdown tool", "Cable stripper", "Multimeter"],
+        "answer": "Punchdown tool",
+        "explanation": "A punchdown tool forces the wire into the IDC (Insulation Displacement Connector) slots of a patch panel or keystone jack."
+    },
+    {
+        "id": 425,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "To increase security for a server room, you want to ensure that if one person enters, they cannot hold the door open for another unauthorized person. What physical control prevents this?",
+        "options": ["Access Control Vestibule (Mantrap)", "Biometric lock", "Video surveillance", "Badge reader"],
+        "answer": "Access Control Vestibule (Mantrap)",
+        "explanation": "An Access Control Vestibule (formerly called Mantrap) is a double-door system where the first door must close before the second opens, preventing tailgating."
+    },
+    {
+        "id": 426,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which regulation primarily governs the protection of credit card data?",
+        "options": ["GDPR", "HIPAA", "PCI-DSS", "NIST"],
+        "answer": "PCI-DSS",
+        "explanation": "PCI-DSS (Payment Card Industry Data Security Standard) governs how credit card information is handled and secured."
+    },
+    {
+        "id": 427,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You need to prevent a specific user from logging in on weekends. Where would you configure 'Logon Hours' in a domain environment?",
+        "options": ["Local Security Policy", "Active Directory Users and Computers", "Task Manager", "Control Panel"],
+        "answer": "Active Directory Users and Computers",
+        "explanation": "In a Windows Domain environment, user restrictions like Logon Hours are managed centrally in Active Directory."
+    },
+    {
+        "id": 428,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user's laptop battery is swollen and pushing the trackpad up. What is the safest immediate action?",
+        "options": ["Push it back down", "Pierce it to release gas", "Stop using it and disconnect from power", "Put it in the freezer"],
+        "answer": "Stop using it and disconnect from power",
+        "explanation": "Swollen Lithium-ion batteries are a fire hazard. Disconnect power immediately and do not puncture or compress them."
+    },
+    {
+        "id": 429,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "A customer is explaining a complex problem, but you already know the solution because you fixed the same issue yesterday. What should you do?",
+        "options": ["Interrupt them to save time", "Let them finish explaining before offering the solution", "Start fixing it while they talk", "Tell them you already know what's wrong"],
+        "answer": "Let them finish explaining before offering the solution",
+        "explanation": "Active listening involves letting the customer finish. Interrupting is considered rude and you might miss a crucial detail unique to this instance."
+    },
+    {
+        "id": 430,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are troubleshooting a 3D printer using Fused Filament Fabrication (FFF). The print is finishing, but the layers are shifting and not aligning correctly. What is the most likely cause?",
+        "options": ["Clogged nozzle", "Loose belt or stepper motor issue", "Wet filament", "Incorrect bed temperature"],
+        "answer": "Loose belt or stepper motor issue",
+        "explanation": "Layer shifting is typically caused by mechanical issues like a loose X/Y axis belt, a loose pulley, or a stepper motor skipping steps."
+    },
+    {
+        "id": 431,
+        "category": "Core 1 (220-1201) - 4.0 Cloud",
+        "question": "In a Shared Responsibility Model for a SaaS solution (like Office 365), what is the customer primarily responsible for?",
+        "options": ["Physical security of the data center", "Patching the underlying OS", "Data classification and user access management", "Replacing failed hard drives"],
+        "answer": "Data classification and user access management",
+        "explanation": "In SaaS, the provider handles hardware, OS, and application updates. The customer is responsible for their own data, accounts, and access policies."
+    },
+    {
+        "id": 432,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You are reviewing a script and see the following code: 'for (i=0; i<10; i++) { ... }'. What type of scripting construct is this?",
+        "options": ["Variable declaration", "Loop", "Comment", "Constant"],
+        "answer": "Loop",
+        "explanation": "This is a classic 'For Loop' structure used to repeat a block of code a specific number of times (in this case, 10 times)."
+    },
+    {
+        "id": 433,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user in the HR department works with sensitive employee data in an open-plan office. They are worried about colleagues walking by and seeing the screen. What physical security control should you install?",
+        "options": ["Biometric lock", "Privacy filter", "Kensington lock", "Screen saver password"],
+        "answer": "Privacy filter",
+        "explanation": "A Privacy Filter (screen guard) limits the viewing angle of the monitor so only the person sitting directly in front can read it, preventing 'Shoulder Surfing'."
+    },
+    {
+        "id": 434,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A network administrator wants to separate the VoIP phones from the computer data traffic on the same physical switch to improve quality and security. What should they configure?",
+        "options": ["VPN", "VLAN", "NAT", "DMZ"],
+        "answer": "VLAN",
+        "explanation": "A VLAN (Virtual LAN) logically separates traffic on the same physical switch. Separating Voice and Data is a standard best practice."
+    },
+    {
+        "id": 435,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which regulation applies specifically to the protection of data for citizens of the European Union (EU)?",
+        "options": ["HIPAA", "GDPR", "PCI-DSS", "NIST"],
+        "answer": "GDPR",
+        "explanation": "GDPR (General Data Protection Regulation) is the EU regulation on data protection and privacy."
     }
 ]
