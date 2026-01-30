@@ -29,10 +29,10 @@ if 'user_answers' not in st.session_state:
 # 加载题目
 questions = load_questions()
 
-# --- 4. 侧边栏布局 ---
+# --- 4. 侧边栏布局 (防崩盘修复版) ---
 with st.sidebar:
     st.header("⚙️ 学习控制台")
-    st.write(f"当前题库数量: {len(questions)}")
+    st.write(f"总题库数量: {len(questions)}")
     
     # 模式切换
     mode = st.radio("选择模式:", ["📝 模拟考试 (Practice)", "📕 错题回顾 (Review)"])
@@ -45,17 +45,30 @@ with st.sidebar:
         # 筛选出出错的题目
         active_questions = [q for q in questions if q['id'] in st.session_state.mistakes]
 
+    # --- 关键修复点：先纠正索引，再画进度条 ---
+    # 如果当前页码超过了题目总数（比如从100题的模式切到只有1题的错题本），强制归零
+    if len(active_questions) > 0 and st.session_state.current_q_index >= len(active_questions):
+        st.session_state.current_q_index = 0
+
     # 进度条
     if len(active_questions) > 0:
-        progress = (st.session_state.current_q_index / len(active_questions))
+        # 现在的 index 肯定是安全的
+        progress = st.session_state.current_q_index / len(active_questions)
         st.progress(progress)
         st.write(f"进度: {st.session_state.current_q_index + 1} / {len(active_questions)}")
+    else:
+        if st.session_state.quiz_mode == 'review':
+            st.info("👏 目前没有错题！")
+            st.caption("去练习模式多刷几道吧~")
+    
+    st.divider()
     
     # 重置按钮
-    if st.button("🔄 重置进度"):
+    if st.button("🔄 重置所有进度"):
         st.session_state.current_q_index = 0
         st.session_state.score = 0
         st.session_state.user_answers = {}
+        st.session_state.mistakes = [] # 可选：是否连错题本也清空
         st.rerun()
 
 # --- 5. 主界面逻辑 (终极修复版) ---
