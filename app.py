@@ -71,7 +71,7 @@ with st.sidebar:
         st.session_state.mistakes = [] # 可选：是否连错题本也清空
         st.rerun()
 
-# --- 5. 主界面逻辑 (终极修复版) ---
+# --- 5. 主界面逻辑 (含跳转功能版) ---
 
 st.title("🛡️ CompTIA A+ (Series 1200)")
 
@@ -82,41 +82,38 @@ if not active_questions:
     else:
         st.error("未找到题目数据，请检查 questions.json 文件。")
 else:
-    # 防止索引越界
+    # --- 1. 防止索引越界 (安全检查) ---
     if st.session_state.current_q_index >= len(active_questions):
         st.session_state.current_q_index = 0
         
     current_q = active_questions[st.session_state.current_q_index]
     q_id = current_q['id']
 
-    # 显示题目
+    # --- 2. 显示题目 ---
     st.markdown(f"### Q{st.session_state.current_q_index + 1}: {current_q['question']}")
     st.caption(f"Category: {current_q['category']}")
 
     # 检查是否已回答
     user_has_answered = q_id in st.session_state.user_answers
 
-    # --- 场景 A: 还没做过这道题 (显示表单) ---
+    # --- 3. 答题区域 (Scenario A: 未答 | Scenario B: 已答) ---
     if not user_has_answered:
+        # [未回答] 显示表单和提交按钮
         with st.form(key=f"form_{q_id}"):
             user_choice = st.radio("请选择答案:", current_q['options'], index=None)
             submit_btn = st.form_submit_button("提交答案")
         
-        # 提交逻辑
         if submit_btn:
             if user_choice:
-                # 记录答案并刷新页面
                 st.session_state.user_answers[q_id] = user_choice
                 st.rerun()
             else:
                 st.warning("⚠️ 请先选择一个选项。")
 
-    # --- 场景 B: 已经做过这道题 (显示结果 + 下一题) ---
     else:
-        # 获取用户的答案
+        # [已回答] 显示结果和解析（只读模式）
         my_choice = st.session_state.user_answers[q_id]
         
-        # 显示只读的选项（不使用 form，避免报错）
         st.radio(
             "请选择答案:", 
             current_q['options'], 
@@ -124,16 +121,13 @@ else:
             disabled=True 
         )
 
-        # 结果判定
         if my_choice == current_q['answer']:
             st.success("✅ 回答正确！")
         else:
             st.error(f"❌ 回答错误。正确答案是: {current_q['answer']}")
-            # 加入错题本
             if q_id not in st.session_state.mistakes:
                 st.session_state.mistakes.append(q_id)
         
-        # 解析
         st.info(f"💡 **解析:** {current_q['explanation']}")
         
         # 下一题按钮
@@ -146,3 +140,26 @@ else:
             if st.button("🔄 重新开始"):
                 st.session_state.current_q_index = 0
                 st.rerun()
+
+    # --- 4. 底部跳转栏 (新增功能) ---
+    st.markdown("---") # 分割线
+    st.write("📍 **快速跳转**")
+    
+    col_jump1, col_jump2 = st.columns([4, 1])
+    
+    with col_jump1:
+        # 输入框：默认显示当前题号，最大值限制为题目总数
+        target_q = st.number_input(
+            "输入题号 (1 - {})".format(len(active_questions)),
+            min_value=1, 
+            max_value=len(active_questions), 
+            value=st.session_state.current_q_index + 1
+        )
+        
+    with col_jump2:
+        st.write("") # 占位符，为了对齐
+        st.write("") 
+        if st.button("Go 🚀"):
+            # 注意：用户输入的是 1 开始的，我们要转成 0 开始的索引
+            st.session_state.current_q_index = target_q - 1
+            st.rerun()
