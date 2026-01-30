@@ -270,5 +270,245 @@
         "options": ["Cracked screen", "Malware running in background", "Full storage", "Failed biometric sensor"],
         "answer": "Malware running in background",
         "explanation": "High resource usage by background malware often causes overheating and rapid battery drain."
+    },
+    {
+        "id": 300,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are upgrading the memory in a laptop. Which RAM form factor should you purchase?",
+        "options": ["DIMM", "SODIMM", "VRAM", "NVMe"],
+        "answer": "SODIMM",
+        [cite_start]"explanation": "Laptops use Small Outline Dual In-line Memory Modules (SODIMM), which are smaller than the standard DIMMs used in desktops[cite: 315]."
+    },
+    {
+        "id": 301,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "Which proprietary connector is used exclusively by Apple mobile devices for charging and data transfer?",
+        "options": ["USB-C", "Micro-USB", "Lightning", "Thunderbolt"],
+        "answer": "Lightning",
+        "explanation": "Lightning is a proprietary connector developed by Apple. [cite_start]While newer Apple devices use USB-C, Lightning is still a key exam objective[cite: 74]."
+    },
+    {
+        "id": 302,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "A content creator needs a storage solution that offers the fastest possible read/write speeds for video editing. Which interface should they use?",
+        "options": ["SATA III", "NVMe", "SCSI", "USB 3.0"],
+        "answer": "NVMe",
+        [cite_start]"explanation": "NVMe (Non-Volatile Memory Express) drives connect via the PCIe bus, offering significantly higher speeds than SATA drives[cite: 333]."
+    },
+    {
+        "id": 303,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "You touch the printed paper coming out of a laser printer, and the toner smudges and comes off on your fingers. Which component is likely failing?",
+        "options": ["Transfer roller", "Fuser", "Imaging drum", "Pickup roller"],
+        "answer": "Fuser",
+        "explanation": "The fuser assembly uses heat and pressure to permanently bond (fuse) the toner to the paper. [cite_start]If it fails, the toner remains loose[cite: 444]."
+    },
+    {
+        "id": 304,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "Which port allows for secure remote administration of a Linux server over a network?",
+        "options": ["Telnet (23)", "SSH (22)", "RDP (3389)", "FTP (21)"],
+        "answer": "SSH (22)",
+        "explanation": "SSH (Secure Shell) operates on port 22 and provides an encrypted channel for remote administration. [cite_start]Telnet is unencrypted[cite: 120]."
+    },
+    {
+        "id": 305,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which RAID level requires a minimum of three drives and provides protection against the failure of a single drive using parity?",
+        "options": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
+        "answer": "RAID 5",
+        "explanation": "RAID 5 uses striping with parity. [cite_start]It requires at least 3 drives and can survive the loss of one drive[cite: 344]."
+    },
+    {
+        "id": 306,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A user wants to pay for their coffee using their smartphone. Which technology must be enabled on the device?",
+        "options": ["Bluetooth", "NFC", "RFID", "GPS"],
+        "answer": "NFC",
+        [cite_start]"explanation": "NFC (Near-Field Communication) is the standard technology used for contactless mobile payments and pairing devices at very close range[cite: 78]."
+    },
+    {
+        "id": 307,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "Which wireless standard operates EXCLUSIVELY in the 5 GHz band?",
+        "options": ["802.11g", "802.11n (Wi-Fi 4)", "802.11ac (Wi-Fi 5)", "802.11ax (Wi-Fi 6)"],
+        "answer": "802.11ac (Wi-Fi 5)",
+        "explanation": "802.11ac (Wi-Fi 5) is the only standard listed that runs solely on the 5 GHz frequency. [cite_start]Wi-Fi 4 and 6 can run on both 2.4 and 5 GHz[cite: 147]."
+    },
+    {
+        "id": 308,
+        "category": "Core 1 (220-1201) - 4.0 Virtualization",
+        "question": "A developer needs to test an application on Linux but only has a Windows 10 laptop. What is the most cost-effective solution?",
+        "options": ["Dual boot", "Client-side virtualization", "Buy a Linux server", "VDI"],
+        "answer": "Client-side virtualization",
+        [cite_start]"explanation": "Running a Type 2 Hypervisor (Client-side virtualization) allows the user to run a Linux VM inside Windows without rebooting[cite: 480]."
+    },
+    {
+        "id": 309,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which power supply connector is the main connector for the motherboard?",
+        "options": ["Molex", "SATA", "PCIe 6-pin", "24-pin ATX"],
+        "answer": "24-pin ATX",
+        [cite_start]"explanation": "The 20+4 (24-pin) ATX connector provides the primary power to the motherboard[cite: 404]."
+    },
+    {
+        "id": 310,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A user needs to join a corporate Active Directory domain. Which Windows Edition is the minimum requirement?",
+        "options": ["Windows 11 Home", "Windows 11 Pro", "Windows 10 S", "Windows 11 Home N"],
+        "answer": "Windows 11 Pro",
+        "explanation": "Windows Home editions cannot join an Active Directory domain. [cite_start]You need Pro, Enterprise, or Education editions[cite: 805]."
+    },
+    {
+        "id": 311,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows command-line tool is used to check the integrity of system files and repair them?",
+        "options": ["chkdsk", "sfc", "gpupdate", "diskpart"],
+        "answer": "sfc",
+        [cite_start]"explanation": "SFC (System File Checker), specifically 'sfc /scannow', scans and repairs corrupted Windows system files[cite: 869]."
+    },
+    {
+        "id": 312,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "In Linux, which command allows a standard user to run a command with root (administrative) privileges?",
+        "options": ["sudo", "chmod", "grep", "pwd"],
+        "answer": "sudo",
+        [cite_start]"explanation": "'sudo' (superuser do) allows a permitted user to execute a command as the superuser or another user[cite: 992]."
+    },
+    {
+        "id": 313,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which macOS tool is used for automatic backups of the entire system?",
+        "options": ["Spotlight", "Time Machine", "Finder", "Disk Utility"],
+        "answer": "Time Machine",
+        [cite_start]"explanation": "Time Machine is the built-in backup feature of macOS[cite: 954]."
+    },
+    {
+        "id": 314,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You need to manually refresh the IP address of a computer. Which two commands should you use in sequence?",
+        "options": ["ping -t / ipconfig", "ipconfig /release & ipconfig /renew", "netstat / tracert", "nslookup / exit"],
+        "answer": "ipconfig /release & ipconfig /renew",
+        [cite_start]"explanation": "'ipconfig /release' drops the current IP, and 'ipconfig /renew' requests a new one from the DHCP server[cite: 847]."
+    },
+    {
+        "id": 315,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A user's computer is running very slowly. You open Task Manager and see disk usage at 100%. What is a potential software cause?",
+        "options": ["BIOS update required", "Scheduled defragmentation or virus scan", "Unseated RAM", "Overheating CPU"],
+        "answer": "Scheduled defragmentation or virus scan",
+        [cite_start]"explanation": "Background processes like scheduled scans or defragmentation often cause high disk usage temporarily[cite: 824]."
+    },
+    {
+        "id": 316,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which file system is native to macOS?",
+        "options": ["NTFS", "FAT32", "APFS", "ext4"],
+        "answer": "APFS",
+        "explanation": "APFS (Apple File System) is the default file system for macOS, iOS, and iPadOS. [cite_start]NTFS is Windows, ext4 is Linux[cite: 761]."
+    },
+    {
+        "id": 317,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which type of malware disguises itself as legitimate software (e.g., a free game) to trick the user into installing it?",
+        "options": ["Worm", "Trojan", "Ransomware", "Spyware"],
+        "answer": "Trojan",
+        [cite_start]"explanation": "A Trojan Horse disguises itself as a useful program to gain access to a system, unlike a virus which replicates itself[cite: 1156]."
+    },
+    {
+        "id": 318,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "What is the proper extension for a Python script?",
+        "options": [".py", ".sh", ".ps1", ".vbs"],
+        "answer": ".py",
+        "explanation": ".py is the standard extension for Python scripts. [cite_start].sh is for Shell (Linux), .ps1 for PowerShell[cite: 1517]."
+    },
+    {
+        "id": 319,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows registry hive contains information about the hardware profile and is created at boot?",
+        "options": ["HKEY_CURRENT_USER", "HKEY_LOCAL_MACHINE", "HKEY_CLASSES_ROOT", "HKEY_USERS"],
+        "answer": "HKEY_LOCAL_MACHINE",
+        [cite_start]"explanation": "HKEY_LOCAL_MACHINE (HKLM) contains configuration data for the local computer, including hardware and software settings[cite: 841]."
+    },
+    {
+        "id": 320,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "An attacker follows an authorized employee through a secure door without using a badge. What is this attack called?",
+        "options": ["Phishing", "Tailgating", "Whaling", "Spoofing"],
+        "answer": "Tailgating",
+        [cite_start]"explanation": "Tailgating (or Piggybacking) is when an unauthorized person follows an authorized person into a secure area[cite: 1193]."
+    },
+    {
+        "id": 321,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which security concept ensures that a user cannot deny having performed an action (like sending an email)?",
+        "options": ["Confidentiality", "Integrity", "Non-repudiation", "Availability"],
+        "answer": "Non-repudiation",
+        "explanation": "Non-repudiation provides proof of the origin of data and prevents the sender from denying they sent it."
+    },
+    {
+        "id": 322,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "According to the '3-2-1 Backup Rule', how many copies of your data should you keep in total?",
+        "options": ["1", "2", "3", "5"],
+        "answer": "3",
+        [cite_start]"explanation": "The 3-2-1 rule states: Keep 3 copies of data, on 2 different media types, with 1 copy offsite[cite: 1449]."
+    },
+    {
+        "id": 323,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You arrive at a customer's site to fix a printer, but the customer is angry and yelling about the delay. What should you do?",
+        "options": ["Argue back", "Ignore them and start working", "Listen actively and apologize for the delay", "Leave the site immediately"],
+        "answer": "Listen actively and apologize for the delay",
+        [cite_start]"explanation": "Professionalism requires active listening, not being defensive, and empathizing with the customer's frustration[cite: 1523]."
+    },
+    {
+        "id": 324,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which document describes the safe handling and disposal procedures for chemical materials like printer toner?",
+        "options": ["SLA", "EULA", "MSDS / SDS", "SOP"],
+        "answer": "MSDS / SDS",
+        [cite_start]"explanation": "A Material Safety Data Sheet (MSDS) or Safety Data Sheet (SDS) lists hazards and safety measures for chemical products[cite: 1465]."
+    },
+    {
+        "id": 325,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which wireless security protocol is the most secure among the following options?",
+        "options": ["WEP", "WPA", "WPA2-AES", "WPA2-TKIP"],
+        "answer": "WPA2-AES",
+        "explanation": "WPA2 with AES (Advanced Encryption Standard) is the modern standard. [cite_start]WEP and WPA are outdated and vulnerable[cite: 1142]."
+    },
+    {
+        "id": 326,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "What is the first step in the Change Management process?",
+        "options": ["Implement the change", "Request for Change (RFC)", "Rollback plan", "Risk analysis"],
+        "answer": "Request for Change (RFC)",
+        [cite_start]"explanation": "Change management begins with submitting a formal request (Request forms) outlining the purpose and scope of the change[cite: 1422]."
+    },
+    {
+        "id": 327,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which of the following is considered 'Personally Identifiable Information' (PII)?",
+        "options": ["Operating System Version", "CPU Model", "Social Security Number", "Monitor Resolution"],
+        "answer": "Social Security Number",
+        [cite_start]"explanation": "PII is any data that can identify a specific individual, such as SSN, full name, or biometric data[cite: 1493]."
+    },
+    {
+        "id": 328,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A mobile user reports that their screen does not rotate when they turn the device sideways. Which component or setting is likely the issue?",
+        "options": ["Digitizer", "Gyroscope / Accelerometer", "GPS", "Proximity Sensor"],
+        "answer": "Gyroscope / Accelerometer",
+        "explanation": "The gyroscope and accelerometer detect the device's orientation. [cite_start]If they fail or the rotation lock is on, the screen won't rotate[cite: 1353]."
+    },
+    {
+        "id": 329,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "When working inside a computer case, what should you wear to prevent damaging components with static electricity?",
+        "options": ["Rubber gloves", "ESD wrist strap", "Safety goggles", "Wool sweater"],
+        "answer": "ESD wrist strap",
+        [cite_start]"explanation": "An Electrostatic Discharge (ESD) wrist strap grounds the technician to the case, preventing static shock from frying sensitive components[cite: 1454]."
     }
 ]
