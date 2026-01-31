@@ -1,0 +1,122 @@
+[
+    {
+        "id": 601,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A technician is troubleshooting a Windows 10 PC that fails to boot and displays the error message 'Boot Configuration Data is missing'. The technician boots into the Windows Recovery Environment (WinRE) and opens a command prompt. Which command should be executed FIRST to attempt repairing the BCD store?",
+        "options": ["bootrec /fixmbr", "bootrec /rebuildbcd", "sfc /scannow", "chkdsk /r"],
+        "answer": "bootrec /rebuildbcd",
+        "explanation": "While '/fixmbr' writes a new master boot record, the specific error indicates missing BCD data. 'bootrec /rebuildbcd' scans all disks for installations and allows you to add them back to the BCD store, directly addressing the error."
+    },
+    {
+        "id": 602,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "An employee receives an urgent text message seemingly from the CEO, asking them to purchase gift cards for a client bonus program and send the codes immediately. The message stresses that the CEO is in a meeting and cannot take calls. What type of social engineering attack is this?",
+        "options": ["Vishing", "Smishing with executive impersonation", "Whaling", "Dumpster diving"],
+        "answer": "Smishing with executive impersonation",
+        "explanation": "This is a text-message-based phishing attack (Smishing). It utilizes impersonation of a high-level executive (CEO) and creates a sense of urgency to pressure the employee."
+    },
+    {
+        "id": 603,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A technician has just successfully identified and disconnected a PC infected with a worm from the network. According to the CompTIA 7-step malware removal process, what is the IMMEDIATE next step that must be taken before attempting to clean the system?",
+        "options": ["Run a full antivirus scan", "Update anti-malware definitions", "Disable System Restore", "Educate the end user"],
+        "answer": "Disable System Restore",
+        "explanation": "Step 3, after quarantine (Step 2), is to disable System Restore. This prevents the malware from hiding in restore points, ensuring that if you need to restore later, you don't re-infect the system."
+    },
+    {
+        "id": 604,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A junior Linux administrator needs to edit a restricted configuration file named '/etc/app.conf' but receives a 'Permission denied' error. They need to edit this file without logging out the current user session. Which command allows them to edit the file with necessary privileges?",
+        "options": ["chmod 777 /etc/app.conf", "sudo vi /etc/app.conf", "su root", "chown user /etc/app.conf"],
+        "answer": "sudo vi /etc/app.conf",
+        "explanation": "Using 'sudo' (superuser do) allows an authorized user to execute a specific command (in this case, a text editor like 'vi') with elevated (root) privileges temporarily."
+    },
+    {
+        "id": 605,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "An Android user reports that a specific business application crashes immediately every time they try to open it. They have already tried restarting the phone, but the issue persists. What is the BEST next step to try and resolve the issue with minimal data loss?",
+        "options": ["Perform a factory reset", "Clear the application cache and data", "Uninstall and reinstall the OS", "Update the device baseband"],
+        "answer": "Clear the application cache and data",
+        "explanation": "Clearing the app's cache and data often resolves corruption issues specific to that app. It's a less invasive step than a factory reset, which should be a last resort."
+    },
+    {
+        "id": 606,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "A technician is implementing a new patch on a critical production server. Midway through the installation, the server crashes and will not reboot. According to change management best practices, what document should the technician immediately refer to?",
+        "options": ["The Service Level Agreement (SLA)", "The Rollback / Backout Plan", "The Network Topology Diagram", "The User Acceptance Testing (UAT) results"],
+        "answer": "The Rollback / Backout Plan",
+        "explanation": "A key part of any change management request is a backout plan. When a change fails critically, the technician must immediately follow this plan to restore the system to its previous working state."
+    },
+    {
+        "id": 607,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A network administrator wants to map a shared network drive '\\\\fileserver\\projects' to the drive letter 'P:' on a Windows user's PC using a script. Which command should be used?",
+        "options": ["net share P: \\\\fileserver\\projects", "net use P: \\\\fileserver\\projects", "ipconfig /renew", "nslookup \\\\fileserver\\projects"],
+        "answer": "net use P: \\\\fileserver\\projects",
+        "explanation": "The 'net use' command is used to connect a computer to a shared resource and can map it to a specific drive letter."
+    },
+    {
+        "id": 608,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A company wants to implement a security measure for their laptop users to ensure that if a laptop is stolen, the data on the hard drive remains inaccessible even if the drive is removed and put into another computer. What should be implemented?",
+        "options": ["BIOS Password", "Full Disk Encryption (e.g., BitLocker)", "Kensington Lock", "Login password with complexity requirements"],
+        "answer": "Full Disk Encryption (e.g., BitLocker)",
+        "explanation": "A login password only stops someone from logging in; it doesn't encrypt the data at rest. Full Disk Encryption (FDE) ensures the data on the drive is unreadable without the decryption key, even if removed."
+    },
+    {
+        "id": 609,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A user's Windows 11 laptop has recently started running very slowly. The technician opens Task Manager and notices that the disk utilization is constantly at 100%, but no single application seems to be using a high amount of data. What is the MOST likely underlying cause?",
+        "options": ["A scheduled full system antivirus scan is running in the background", "The RAM is unseated", "The CPU is overheating", "The graphics driver is corrupted"],
+        "answer": "A scheduled full system antivirus scan is running in the background",
+        "explanation": "Background system processes, like a Windows update installation, an indexing service, or a full antivirus scan, are common causes for high disk usage that might not immediately be obvious just by looking at running apps."
+    },
+    {
+        "id": 610,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You are working at a help desk. A customer calls in very angry because their issue hasn't been resolved for three days. They start yelling at you. According to professional communication standards, what is the BEST way to handle this situation?",
+        "options": ["Yell back to assert authority", "Immediately transfer them to a manager", "Stay calm, listen actively, and apologize for the frustration", "Tell them you will hang up if they don't calm down"],
+        "answer": "Stay calm, listen actively, and apologize for the frustration",
+        "explanation": "Maintaining professionalism involves de-escalation. Staying calm, using active listening techniques (acknowledging their issue), and empathizing with their frustration is the best approach."
+    },
+    {
+        "id": 611,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which macOS feature should a technician use to create an exact, bootable replica of the entire system drive to an external hard drive for backup purposes before a major OS upgrade?",
+        "options": ["Time Machine", "Disk Utility (Restore function)", "Migration Assistant", "Spotlight"],
+        "answer": "Disk Utility (Restore function)",
+        "explanation": "While Time Machine is for versioned backups, Disk Utility's 'Restore' function allow you to block-copy one volume to another, creating a bootable clone (replica)."
+    },
+    {
+        "id": 612,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "To enhance security for users logging into a cloud portal, the IT director wants to implement a system where users must provide their password AND approve a push notification on their smartphone. What is this security concept called?",
+        "options": ["Single Sign-On (SSO)", "Multifactor Authentication (MFA)", "Biometrics", "Least Privilege"],
+        "answer": "Multifactor Authentication (MFA)",
+        "explanation": "MFA requires two or more *different* types of authentication factors. This scenario uses 'Something you know' (password) and 'Something you have' (the smartphone receiving the push)."
+    },
+    {
+        "id": 613,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A user reports that their web browser homepage keeps changing to a strange search engine they didn't select, and they see frequent pop-up ads even when not browsing risky sites. They have run a quick virus scan which came up clean. What type of software is MOST likely causing this?",
+        "options": ["Ransomware", "Adware/PUP (Potentially Unwanted Program)", "Keylogger", "Botnet client"],
+        "answer": "Adware/PUP (Potentially Unwanted Program)",
+        "explanation": "Browser hijacking (changing homepage) and excessive pop-ups are classic symptoms of Adware or PUPs. Traditional antivirus quick scans sometimes miss these as they aren't always classified as 'malicious' viruses."
+    },
+    {
+        "id": 614,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A technician is configuring a Windows workstation that will be used as a kiosk in a public lobby. They need to ensure that the system automatically logs in with a specific user account when it boots up, without requiring a password prompt. Which tool allows configuring auto-admin logon?",
+        "options": ["Local Security Policy (secpol.msc)", "Registry Editor (regedit)", "Task Manager", "System Configuration (msconfig)"],
+        "answer": "Registry Editor (regedit)",
+        "explanation": "Configuring automatic logon usually requires modifying specific keys in the Windows Registry (specifically under Winlogon), as it's not exposed in standard control panels for security reasons."
+    },
+    {
+        "id": 615,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "An IT department has a policy that data on decommissioned hard drives containing PII (Personally Identifiable Information) must be rendered completely unrecoverable before the drives leave the facility. Which method meets this requirement MOST effectively?",
+        "options": ["Standard high-level formatting", "Degaussing or Physical Destruction (Shredding)", "Reinstalling the operating system", "Deleting the partition table"],
+        "answer": "Degaussing or Physical Destruction (Shredding)",
+        "explanation": "Formatting or deleting partitions does not erase data; it just removes the index. For secure disposal of PII, physical destruction (shredding) or degaussing (for magnetic drives) are the standard methods to ensure data is unrecoverable."
+    }
+]

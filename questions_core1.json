@@ -1,0 +1,548 @@
+[
+    {
+        "id": 1,
+        "category": "Core 1 (220-1201) - Networking",
+        "question": "A user wants to utilize the new Wi-Fi 6E standard to reduce interference. Which frequency band must their device support?",
+        "options": [
+            "2.4 GHz",
+            "5 GHz",
+            "6 GHz",
+            "60 GHz"
+        ],
+        "answer": "6 GHz",
+        "explanation": "According to the CompTIA 220-1201 objectives, Wi-Fi 6E introduces the 6 GHz frequency band to provide more channels and less interference."
+    },
+    {
+        "id": 3,
+        "category": "Core 1 (220-1201) - Hardware",
+        "question": "Which connector type is typically used for a wired network connection (Ethernet)?",
+        "options": [
+            "RJ11",
+            "RJ45",
+            "USB-C",
+            "Thunderbolt"
+        ],
+        "answer": "RJ45",
+        "explanation": "RJ45 is the standard connector for twisted pair Ethernet cables (Objective 3.2). RJ11 is for telephone lines."
+    },
+    {
+        "id": 101,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A user needs to charge a new laptop and connect a 4K monitor using a single cable. Which interface should you recommend?",
+        "options": [
+            "USB-C with Thunderbolt 4",
+            "HDMI 2.1",
+            "DisplayPort 1.4",
+            "Micro-USB"
+        ],
+        "answer": "USB-C with Thunderbolt 4",
+        "explanation": "Thunderbolt 4 / USB-C supports high-speed data, video output, and power delivery (charging) simultaneously."
+    },
+    {
+        "id": 102,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "You are setting up a Wi-Fi network in a dense apartment complex. To utilize the least congested frequency band introduced in Wi-Fi 6E, which band should you configure?",
+        "options": [
+            "2.4 GHz",
+            "5 GHz",
+            "6 GHz",
+            "900 MHz"
+        ],
+        "answer": "6 GHz",
+        "explanation": "Wi-Fi 6E extends Wi-Fi 6 capabilities into the 6 GHz frequency band, offering more channels and less interference."
+    },
+    {
+        "id": 103,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "Which port number must be open on a firewall to allow secure remote access via SSH?",
+        "options": [
+            "21",
+            "22",
+            "23",
+            "3389"
+        ],
+        "answer": "22",
+        "explanation": "SSH (Secure Shell) uses port 22. Port 23 is Telnet (unsecure), and 3389 is RDP."
+    },
+    {
+        "id": 104,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "A gamer wants to upgrade their display to get the deepest blacks and highest contrast ratio without a backlight. Which technology should they choose?",
+        "options": [
+            "IPS LCD",
+            "TN LCD",
+            "OLED",
+            "VA LCD"
+        ],
+        "answer": "OLED",
+        "explanation": "OLED (Organic Light-emitting Diode) displays use self-emissive pixels, allowing for true blacks and high contrast, unlike LCDs which use backlights."
+    },
+    {
+        "id": 105,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which RAID configuration provides both striping and mirroring, requiring at least four drives?",
+        "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 5",
+            "RAID 10"
+        ],
+        "answer": "RAID 10",
+        "explanation": "RAID 10 (or 1+0) combines the speed of striping (RAID 0) with the redundancy of mirroring (RAID 1)."
+    },
+    {
+        "id": 106,
+        "category": "Core 1 (220-1201) - 4.0 Cloud",
+        "question": "A company wants to develop applications without managing the underlying operating system or hardware. They only want to manage their data and code. Which cloud model fits this need?",
+        "options": [
+            "SaaS",
+            "IaaS",
+            "PaaS",
+            "DaaS"
+        ],
+        "answer": "PaaS",
+        "explanation": "Platform as a Service (PaaS) provides the development environment (OS, database, web server) managed by the provider, leaving the customer to manage only the application."
+    },
+    {
+        "id": 107,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A laser printer is producing pages with a repeating vertical black line. What is the most likely cause?",
+        "options": [
+            "Low toner",
+            "Damaged imaging drum",
+            "Clogged print head",
+            "Wrong paper type"
+        ],
+        "answer": "Damaged imaging drum",
+        "explanation": "A scratch on the imaging drum often causes a repetitive vertical mark on every page. Clogged print heads are an inkjet issue."
+    },
+    {
+        "id": 108,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "Which DNS record type is used to map a hostname to an IPv6 address?",
+        "options": [
+            "A",
+            "AAAA",
+            "CNAME",
+            "MX"
+        ],
+        "answer": "AAAA",
+        "explanation": "An 'A' record is for IPv4, while an 'AAAA' record is used for IPv6 addresses."
+    },
+    {
+        "id": 109,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are installing memory in a server that requires protection against single-bit errors. Which type of RAM should you use?",
+        "options": [
+            "SODIMM",
+            "Non-ECC",
+            "ECC",
+            "DDR4"
+        ],
+        "answer": "ECC",
+        "explanation": "Error-correcting code (ECC) RAM can detect and correct common data corruption, essential for servers."
+    },
+    {
+        "id": 110,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A projector shuts down intermittently after 15 minutes of use. You notice a warning light. What is the most likely cause?",
+        "options": [
+            "Dead pixels",
+            "Overheating",
+            "Burn-in",
+            "Incorrect resolution"
+        ],
+        "answer": "Overheating",
+        "explanation": "Intermittent shutdowns are a classic symptom of overheating, often caused by a blocked filter or failing fan."
+    },
+    {
+        "id": 111,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which storage form factor connects directly to the motherboard without cables and uses the NVMe protocol?",
+        "options": [
+            "3.5-inch HDD",
+            "2.5-inch SSD",
+            "M.2",
+            "eSATA"
+        ],
+        "answer": "M.2",
+        "explanation": "M.2 drives connect directly to the motherboard and often use the NVMe protocol for high speed."
+    },
+    {
+        "id": 112,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A user cannot access the internet, and their IP address starts with 169.254.x.x. What does this indicate?",
+        "options": [
+            "The DHCP server is unreachable (APIPA)",
+            "DNS resolution failure",
+            "Duplicate IP conflict",
+            "IPv6 is enabled"
+        ],
+        "answer": "The DHCP server is unreachable (APIPA)",
+        "explanation": "An address in the 169.254.x.x range is an APIPA (Automatic Private IP Addressing) address, indicating the device could not contact a DHCP server."
+    },
+    {
+        "id": 113,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "Which component in a laptop is responsible for converting DC power to AC power for the screen's backlight (on older LCDs)?",
+        "options": [
+            "Digitizer",
+            "Inverter",
+            "Rectifier",
+            "Capacitor"
+        ],
+        "answer": "Inverter",
+        "explanation": "The inverter converts DC power from the motherboard to AC power required by CCFL backlights in older LCDs."
+    },
+    {
+        "id": 114,
+        "category": "Core 1 (220-1201) - 4.0 Virtualization",
+        "question": "Which type of hypervisor runs directly on the hardware without a host operating system?",
+        "options": [
+            "Type 1",
+            "Type 2",
+            "Container",
+            "Sandbox"
+        ],
+        "answer": "Type 1",
+        "explanation": "Type 1 hypervisors (bare-metal) run directly on the hardware. Type 2 runs as an application on top of an OS."
+    },
+    {
+        "id": 115,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You need to verify the voltage output of a power supply unit (PSU). Which tool should you use?",
+        "options": [
+            "Loopback plug",
+            "Multimeter",
+            "Cable tester",
+            "Tone generator"
+        ],
+        "answer": "Multimeter",
+        "explanation": "A multimeter is used to measure electrical properties like voltage, current, and resistance."
+    },
+    {
+        "id": 300,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are upgrading the memory in a laptop. Which RAM form factor should you purchase?",
+        "options": [
+            "DIMM",
+            "SODIMM",
+            "VRAM",
+            "NVMe"
+        ],
+        "answer": "SODIMM",
+        "explanation": "Laptops use Small Outline Dual In-line Memory Modules (SODIMM), which are smaller than the standard DIMMs used in desktops."
+    },
+    {
+        "id": 301,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "Which proprietary connector is used exclusively by Apple mobile devices for charging and data transfer?",
+        "options": [
+            "USB-C",
+            "Micro-USB",
+            "Lightning",
+            "Thunderbolt"
+        ],
+        "answer": "Lightning",
+        "explanation": "Lightning is a proprietary connector developed by Apple. While newer Apple devices use USB-C, Lightning is still a key exam objective."
+    },
+    {
+        "id": 302,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "A content creator needs a storage solution that offers the fastest possible read/write speeds for video editing. Which interface should they use?",
+        "options": [
+            "SATA III",
+            "NVMe",
+            "SCSI",
+            "USB 3.0"
+        ],
+        "answer": "NVMe",
+        "explanation": "NVMe (Non-Volatile Memory Express) drives connect via the PCIe bus, offering significantly higher speeds than SATA drives."
+    },
+    {
+        "id": 303,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "You touch the printed paper coming out of a laser printer, and the toner smudges and comes off on your fingers. Which component is likely failing?",
+        "options": [
+            "Transfer roller",
+            "Fuser",
+            "Imaging drum",
+            "Pickup roller"
+        ],
+        "answer": "Fuser",
+        "explanation": "The fuser assembly uses heat and pressure to permanently bond (fuse) the toner to the paper. If it fails, the toner remains loose."
+    },
+    {
+        "id": 304,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "Which port allows for secure remote administration of a Linux server over a network?",
+        "options": [
+            "Telnet (23)",
+            "SSH (22)",
+            "RDP (3389)",
+            "FTP (21)"
+        ],
+        "answer": "SSH (22)",
+        "explanation": "SSH (Secure Shell) operates on port 22 and provides an encrypted channel for remote administration. Telnet is unencrypted."
+    },
+    {
+        "id": 305,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which RAID level requires a minimum of three drives and provides protection against the failure of a single drive using parity?",
+        "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 5",
+            "RAID 10"
+        ],
+        "answer": "RAID 5",
+        "explanation": "RAID 5 uses striping with parity. It requires at least 3 drives and can survive the loss of one drive."
+    },
+    {
+        "id": 306,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A user wants to pay for their coffee using their smartphone. Which technology must be enabled on the device?",
+        "options": [
+            "Bluetooth",
+            "NFC",
+            "RFID",
+            "GPS"
+        ],
+        "answer": "NFC",
+        "explanation": "NFC (Near-Field Communication) is the standard technology used for contactless mobile payments and pairing devices at very close range."
+    },
+    {
+        "id": 307,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "Which wireless standard operates EXCLUSIVELY in the 5 GHz band?",
+        "options": [
+            "802.11g",
+            "802.11n (Wi-Fi 4)",
+            "802.11ac (Wi-Fi 5)",
+            "802.11ax (Wi-Fi 6)"
+        ],
+        "answer": "802.11ac (Wi-Fi 5)",
+        "explanation": "802.11ac (Wi-Fi 5) is the only standard listed that runs solely on the 5 GHz frequency. Wi-Fi 4 and 6 can run on both 2.4 and 5 GHz."
+    },
+    {
+        "id": 308,
+        "category": "Core 1 (220-1201) - 4.0 Virtualization",
+        "question": "A developer needs to test an application on Linux but only has a Windows 10 laptop. What is the most cost-effective solution?",
+        "options": [
+            "Dual boot",
+            "Client-side virtualization",
+            "Buy a Linux server",
+            "VDI"
+        ],
+        "answer": "Client-side virtualization",
+        "explanation": "Running a Type 2 Hypervisor (Client-side virtualization) allows the user to run a Linux VM inside Windows without rebooting."
+    },
+    {
+        "id": 309,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which power supply connector is the main connector for the motherboard?",
+        "options": [
+            "Molex",
+            "SATA",
+            "PCIe 6-pin",
+            "24-pin ATX"
+        ],
+        "answer": "24-pin ATX",
+        "explanation": "The 20+4 (24-pin) ATX connector provides the primary power to the motherboard."
+    },
+    {
+        "id": 400,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user reports that their laptop cursor is jumping around the screen randomly while they are typing. What is the MOST likely cause and solution?",
+        "options": [
+            "Malware infection; run a virus scan",
+            "Defective mouse driver; reinstall driver",
+            "Accidental touchpad contact; disable touchpad while typing",
+            "Corrupted OS; reimaging the laptop"
+        ],
+        "answer": "Accidental touchpad contact; disable touchpad while typing",
+        "explanation": "This is a common issue with laptops. The user's palms likely brush against the touchpad while typing. Disabling the touchpad or adjusting sensitivity fixes this."
+    },
+    {
+        "id": 401,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "You boot up a workstation and hear a loud clicking noise coming from the case. The system fails to boot into Windows and shows a 'No Boot Device Found' error. What should you replace?",
+        "options": [
+            "System Fan",
+            "Power Supply",
+            "Mechanical Hard Drive (HDD)",
+            "SSD"
+        ],
+        "answer": "Mechanical Hard Drive (HDD)",
+        "explanation": "The 'Click of Death' is a classic symptom of a mechanical hard drive (HDD) read/write head failure."
+    },
+    {
+        "id": 402,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A technician is setting up a Wi-Fi network for a cafe. They need to cover a large outdoor patio area. Speed is less important than range. Which frequency should they configure the access points to use primarily?",
+        "options": [
+            "5 GHz",
+            "6 GHz",
+            "2.4 GHz",
+            "60 GHz"
+        ],
+        "answer": "2.4 GHz",
+        "explanation": "2.4 GHz provides the longest range and best wall penetration, although it is slower than 5 GHz or 6 GHz."
+    },
+    {
+        "id": 403,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user's monitor displays strange artifacts and distorted colors. You check the connections and they are secure. You plug the monitor into another PC and it works fine. What is the likely culprit?",
+        "options": [
+            "The Monitor Panel",
+            "The HDMI Cable",
+            "The Graphics Card (GPU) / Drivers",
+            "The Power Supply"
+        ],
+        "answer": "The Graphics Card (GPU) / Drivers",
+        "explanation": "Since the monitor works on another PC, the monitor is fine. Artifacts usually point to a failing GPU or overheating video card."
+    },
+    {
+        "id": 404,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are building a virtualization server that will host 20 virtual machines. Which hardware component is the MOST critical to maximize?",
+        "options": [
+            "High-end Sound Card",
+            "RAM",
+            "Graphics Card",
+            "Power Supply Wattage"
+        ],
+        "answer": "RAM",
+        "explanation": "VMs consume significant amounts of RAM. If you run out of physical RAM, the VMs will slow down drastically or crash."
+    },
+    {
+        "id": 405,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A small office wants to ensure that if their main internet connection (Fiber) goes down, they automatically switch to a backup 5G connection. What feature should be configured on the router?",
+        "options": [
+            "QoS",
+            "Port Forwarding",
+            "Failover",
+            "VPN Passthrough"
+        ],
+        "answer": "Failover",
+        "explanation": "WAN Failover allows a router to switch to a secondary internet source automatically when the primary link fails."
+    },
+    {
+        "id": 406,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A projector in a conference room shuts down after exactly 2 minutes of use every time. You see a red LED warning light. What should you check first?",
+        "options": [
+            "Replace the bulb",
+            "Clean the air intake filter",
+            "Adjust the resolution",
+            "Change the HDMI cable"
+        ],
+        "answer": "Clean the air intake filter",
+        "explanation": "Timed shutdowns with warning lights usually indicate overheating. Blocked dust filters prevent cooling."
+    },
+    {
+        "id": 407,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are replacing a power supply unit (PSU). The new PSU has a modular cable design. What is the key advantage of this?",
+        "options": [
+            "It provides more wattage",
+            "It is cheaper",
+            "Better airflow/cable management",
+            "It supports 220V automatically"
+        ],
+        "answer": "Better airflow/cable management",
+        "explanation": "Modular PSUs allow you to attach only the cables you need, reducing clutter and improving airflow inside the case."
+    },
+    {
+        "id": 408,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A corporate user wants to read their encrypted work emails (S/MIME) on their mobile device. What must be installed on the device?",
+        "options": [
+            "Antivirus",
+            "A specific Digital Certificate",
+            "A VPN client",
+            "Biometric lock"
+        ],
+        "answer": "A specific Digital Certificate",
+        "explanation": "To read S/MIME encrypted emails, the private key (digital certificate) associated with the user must be installed on the device."
+    },
+    {
+        "id": 409,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A printer queue is backed up with 20 jobs. You try to delete them, but they are stuck. What is the best command to restart the printing service in Windows?",
+        "options": [
+            "net stop spooler / net start spooler",
+            "ipconfig /flushdns",
+            "gpupdate /force",
+            "chkdsk /f"
+        ],
+        "answer": "net stop spooler / net start spooler",
+        "explanation": "Restarting the Print Spooler service is the standard fix for stuck print queues."
+    },
+    {
+        "id": 424,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "You are terminating a Cat 6 cable into a patch panel. Which tool is designed to push the wire into the block and cut off the excess?",
+        "options": [
+            "Crimper",
+            "Punchdown tool",
+            "Cable stripper",
+            "Multimeter"
+        ],
+        "answer": "Punchdown tool",
+        "explanation": "A punchdown tool forces the wire into the IDC (Insulation Displacement Connector) slots of a patch panel or keystone jack."
+    },
+    {
+        "id": 428,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user's laptop battery is swollen and pushing the trackpad up. What is the safest immediate action?",
+        "options": [
+            "Push it back down",
+            "Pierce it to release gas",
+            "Stop using it and disconnect from power",
+            "Put it in the freezer"
+        ],
+        "answer": "Stop using it and disconnect from power",
+        "explanation": "Swollen Lithium-ion batteries are a fire hazard. Disconnect power immediately and do not puncture or compress them."
+    },
+    {
+        "id": 430,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are troubleshooting a 3D printer using Fused Filament Fabrication (FFF). The print is finishing, but the layers are shifting and not aligning correctly. What is the most likely cause?",
+        "options": [
+            "Clogged nozzle",
+            "Loose belt or stepper motor issue",
+            "Wet filament",
+            "Incorrect bed temperature"
+        ],
+        "answer": "Loose belt or stepper motor issue",
+        "explanation": "Layer shifting is typically caused by mechanical issues like a loose X/Y axis belt, a loose pulley, or a stepper motor skipping steps."
+    },
+    {
+        "id": 431,
+        "category": "Core 1 (220-1201) - 4.0 Cloud",
+        "question": "In a Shared Responsibility Model for a SaaS solution (like Office 365), what is the customer primarily responsible for?",
+        "options": [
+            "Physical security of the data center",
+            "Patching the underlying OS",
+            "Data classification and user access management",
+            "Replacing failed hard drives"
+        ],
+        "answer": "Data classification and user access management",
+        "explanation": "In SaaS, the provider handles hardware, OS, and application updates. The customer is responsible for their own data, accounts, and access policies."
+    },
+    {
+        "id": 434,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A network administrator wants to separate the VoIP phones from the computer data traffic on the same physical switch to improve quality and security. What should they configure?",
+        "options": [
+            "VPN",
+            "VLAN",
+            "NAT",
+            "DMZ"
+        ],
+        "answer": "VLAN",
+        "explanation": "A VLAN (Virtual LAN) logically separates traffic on the same physical switch. Separating Voice and Data is a standard best practice."
+    }
+]

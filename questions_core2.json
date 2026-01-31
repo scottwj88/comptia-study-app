@@ -1,0 +1,756 @@
+[
+    {
+        "id": 2,
+        "category": "Core 2 (220-1202) - Security",
+        "question": "You have identified and quarantined a PC infected with malware. According to the CompTIA malware removal process, what is the IMMEDIATE next step?",
+        "options": [
+            "Update anti-malware software",
+            "Disable System Restore",
+            "Educate the end user",
+            "Schedule scans"
+        ],
+        "answer": "Disable System Restore",
+        "explanation": "The 7-step malware removal process (Objective 2.6) requires disabling System Restore (step 3) after quarantine to prevent the malware from being saved in a restore point."
+    },
+    {
+        "id": 4,
+        "category": "Core 2 (220-1202) - Software Troubleshooting",
+        "question": "A Windows 10 user reports their computer frequently freezes. You suspect a failing RAM module. Which built-in tool should you use?",
+        "options": [
+            "Disk Management",
+            "Windows Memory Diagnostic",
+            "DirectX Diagnostic Tool",
+            "Defragment and Optimize Drives"
+        ],
+        "answer": "Windows Memory Diagnostic",
+        "explanation": "Windows Memory Diagnostic (mdsched.exe) is the built-in tool specifically designed to test RAM for errors."
+    },
+    {
+        "id": 201,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which hardware requirement is mandatory for installing Windows 11 to support security features like BitLocker?",
+        "options": [
+            "TPM 2.0",
+            "16GB RAM",
+            "Thunderbolt 4",
+            "M.2 SSD"
+        ],
+        "answer": "TPM 2.0",
+        "explanation": "Windows 11 requires a Trusted Platform Module (TPM) 2.0 for enhanced security features."
+    },
+    {
+        "id": 202,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "In Linux, which command is used to change the ownership of a file?",
+        "options": [
+            "chmod",
+            "chown",
+            "grep",
+            "ps"
+        ],
+        "answer": "chown",
+        "explanation": "'chown' stands for 'change owner'. 'chmod' changes permissions."
+    },
+    {
+        "id": 203,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user scans a QR code on a parking meter which directs them to a fake payment site. What type of attack is this?",
+        "options": [
+            "Vishing",
+            "Tailgating",
+            "QR code phishing",
+            "Whaling"
+        ],
+        "answer": "QR code phishing",
+        "explanation": "This is a specific form of phishing involving malicious QR codes, also known as 'Quishing'."
+    },
+    {
+        "id": 204,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "According to the CompTIA malware removal procedure, what should you do immediately after quarantining an infected system?",
+        "options": [
+            "Educate the user",
+            "Disable System Restore",
+            "Update antivirus definitions",
+            "Reimage the machine"
+        ],
+        "answer": "Disable System Restore",
+        "explanation": "Step 3 of the malware removal process is to disable System Restore to prevent the malware from saving itself in a backup point."
+    },
+    {
+        "id": 205,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which file extension is associated with a PowerShell script?",
+        "options": [
+            ".bat",
+            ".sh",
+            ".ps1",
+            ".py"
+        ],
+        "answer": ".ps1",
+        "explanation": ".ps1 is the standard file extension for Windows PowerShell scripts."
+    },
+    {
+        "id": 206,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A Windows user sees a 'Blue Screen of Death' (BSOD). Which tool can help you analyze the logs to find the cause?",
+        "options": [
+            "Disk Defragmenter",
+            "Event Viewer",
+            "Task Manager",
+            "Registry Editor"
+        ],
+        "answer": "Event Viewer",
+        "explanation": "Event Viewer (eventvwr.msc) logs system errors, including critical failures that cause BSODs."
+    },
+    {
+        "id": 207,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which macOS feature allows for quick, small security updates without a full system restart?",
+        "options": [
+            "Time Machine",
+            "Spotlight",
+            "Rapid Security Response (RSR)",
+            "Mission Control"
+        ],
+        "answer": "Rapid Security Response (RSR)",
+        "explanation": "RSR is a feature in newer macOS versions that delivers important security improvements between software updates."
+    },
+    {
+        "id": 208,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which backup method backs up all files selected that have changed since the last FULL backup?",
+        "options": [
+            "Incremental",
+            "Differential",
+            "Full",
+            "Copy"
+        ],
+        "answer": "Differential",
+        "explanation": "A differential backup captures all data changed since the last full backup. Incremental captures changes since the last backup of ANY type."
+    },
+    {
+        "id": 209,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which logical security measure adheres to the 'Principle of Least Privilege'?",
+        "options": [
+            "Biometric locks",
+            "Restricting user permissions",
+            "Installing a firewall",
+            "Using a privacy screen"
+        ],
+        "answer": "Restricting user permissions",
+        "explanation": "Restricting permissions ensures users only have access to what they need to do their job, the definition of least privilege."
+    },
+    {
+        "id": 210,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You need to partition a hard drive larger than 2TB in Windows. Which partition style must you use?",
+        "options": [
+            "MBR",
+            "GPT",
+            "FAT32",
+            "NTFS"
+        ],
+        "answer": "GPT",
+        "explanation": "GUID Partition Table (GPT) supports drives larger than 2TB, whereas Master Boot Record (MBR) has a 2TB limit."
+    },
+    {
+        "id": 211,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "When disposing of old hard drives containing sensitive customer data, which method ensures the data is unrecoverable?",
+        "options": [
+            "Standard formatting",
+            "Deleting partitions",
+            "Shredding/Drilling",
+            "Reinstalling OS"
+        ],
+        "answer": "Shredding/Drilling",
+        "explanation": "Physical destruction (Shredding or Drilling) is the most secure way to ensure data on a hard drive cannot be recovered."
+    },
+    {
+        "id": 212,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user receives a text message claiming to be from their bank asking them to click a link to unlock their account. What is this called?",
+        "options": [
+            "Phishing",
+            "Vishing",
+            "Smishing",
+            "Spam"
+        ],
+        "answer": "Smishing",
+        "explanation": "Smishing is phishing conducted via SMS (text message)."
+    },
+    {
+        "id": 213,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows command line tool is used to force a group policy update immediately?",
+        "options": [
+            "gpresult",
+            "gpupdate",
+            "chkdsk",
+            "sfc"
+        ],
+        "answer": "gpupdate",
+        "explanation": "'gpupdate' refreshes local and Active Directory-based Group Policy settings. 'gpresult' only shows the settings."
+    },
+    {
+        "id": 214,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which authentication factor falls under the category 'Something you are'?",
+        "options": [
+            "Password",
+            "Smart Card",
+            "Fingerprint",
+            "GPS Location"
+        ],
+        "answer": "Fingerprint",
+        "explanation": "Biometrics (Fingerprint, Face ID) are 'Something you are'. Passwords are 'Something you know', Smart Cards are 'Something you have'."
+    },
+    {
+        "id": 215,
+        "category": "Core 2 (220-1202) - 3.0 Troubleshooting",
+        "question": "A mobile device battery is draining extremely fast, and the device feels hot even when not in use. What is the most likely cause?",
+        "options": [
+            "Cracked screen",
+            "Malware running in background",
+            "Full storage",
+            "Failed biometric sensor"
+        ],
+        "answer": "Malware running in background",
+        "explanation": "High resource usage by background malware often causes overheating and rapid battery drain."
+    },
+    {
+        "id": 310,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A user needs to join a corporate Active Directory domain. Which Windows Edition is the minimum requirement?",
+        "options": [
+            "Windows 11 Home",
+            "Windows 11 Pro",
+            "Windows 10 S",
+            "Windows 11 Home N"
+        ],
+        "answer": "Windows 11 Pro",
+        "explanation": "Windows Home editions cannot join an Active Directory domain. You need Pro, Enterprise, or Education editions."
+    },
+    {
+        "id": 311,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows command-line tool is used to check the integrity of system files and repair them?",
+        "options": [
+            "chkdsk",
+            "sfc",
+            "gpupdate",
+            "diskpart"
+        ],
+        "answer": "sfc",
+        "explanation": "SFC (System File Checker), specifically 'sfc /scannow', scans and repairs corrupted Windows system files."
+    },
+    {
+        "id": 312,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "In Linux, which command allows a standard user to run a command with root (administrative) privileges?",
+        "options": [
+            "sudo",
+            "chmod",
+            "grep",
+            "pwd"
+        ],
+        "answer": "sudo",
+        "explanation": "'sudo' (superuser do) allows a permitted user to execute a command as the superuser or another user."
+    },
+    {
+        "id": 313,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which macOS tool is used for automatic backups of the entire system?",
+        "options": [
+            "Spotlight",
+            "Time Machine",
+            "Finder",
+            "Disk Utility"
+        ],
+        "answer": "Time Machine",
+        "explanation": "Time Machine is the built-in backup feature of macOS."
+    },
+    {
+        "id": 314,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You need to manually refresh the IP address of a computer. Which two commands should you use in sequence?",
+        "options": [
+            "ping -t / ipconfig",
+            "ipconfig /release & ipconfig /renew",
+            "netstat / tracert",
+            "nslookup / exit"
+        ],
+        "answer": "ipconfig /release & ipconfig /renew",
+        "explanation": "'ipconfig /release' drops the current IP, and 'ipconfig /renew' requests a new one from the DHCP server."
+    },
+    {
+        "id": 315,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A user's computer is running very slowly. You open Task Manager and see disk usage at 100%. What is a potential software cause?",
+        "options": [
+            "BIOS update required",
+            "Scheduled defragmentation or virus scan",
+            "Unseated RAM",
+            "Overheating CPU"
+        ],
+        "answer": "Scheduled defragmentation or virus scan",
+        "explanation": "Background processes like scheduled scans or defragmentation often cause high disk usage temporarily."
+    },
+    {
+        "id": 316,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which file system is native to macOS?",
+        "options": [
+            "NTFS",
+            "FAT32",
+            "APFS",
+            "ext4"
+        ],
+        "answer": "APFS",
+        "explanation": "APFS (Apple File System) is the default file system for macOS, iOS, and iPadOS. NTFS is Windows, ext4 is Linux."
+    },
+    {
+        "id": 317,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which type of malware disguises itself as legitimate software (e.g., a free game) to trick the user into installing it?",
+        "options": [
+            "Worm",
+            "Trojan",
+            "Ransomware",
+            "Spyware"
+        ],
+        "answer": "Trojan",
+        "explanation": "A Trojan Horse disguises itself as a useful program to gain access to a system, unlike a virus which replicates itself."
+    },
+    {
+        "id": 318,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "What is the proper extension for a Python script?",
+        "options": [
+            ".py",
+            ".sh",
+            ".ps1",
+            ".vbs"
+        ],
+        "answer": ".py",
+        "explanation": ".py is the standard extension for Python scripts. .sh is for Shell (Linux), .ps1 for PowerShell."
+    },
+    {
+        "id": 319,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows registry hive contains information about the hardware profile and is created at boot?",
+        "options": [
+            "HKEY_CURRENT_USER",
+            "HKEY_LOCAL_MACHINE",
+            "HKEY_CLASSES_ROOT",
+            "HKEY_USERS"
+        ],
+        "answer": "HKEY_LOCAL_MACHINE",
+        "explanation": "HKEY_LOCAL_MACHINE (HKLM) contains configuration data for the local computer, including hardware and software settings."
+    },
+    {
+        "id": 320,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "An attacker follows an authorized employee through a secure door without using a badge. What is this attack called?",
+        "options": [
+            "Phishing",
+            "Tailgating",
+            "Whaling",
+            "Spoofing"
+        ],
+        "answer": "Tailgating",
+        "explanation": "Tailgating (or Piggybacking) is when an unauthorized person follows an authorized person into a secure area."
+    },
+    {
+        "id": 321,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which security concept ensures that a user cannot deny having performed an action (like sending an email)?",
+        "options": [
+            "Confidentiality",
+            "Integrity",
+            "Non-repudiation",
+            "Availability"
+        ],
+        "answer": "Non-repudiation",
+        "explanation": "Non-repudiation provides proof of the origin of data and prevents the sender from denying they sent it."
+    },
+    {
+        "id": 322,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "According to the '3-2-1 Backup Rule', how many copies of your data should you keep in total?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+        ],
+        "answer": "3",
+        "explanation": "The 3-2-1 rule states: Keep 3 copies of data, on 2 different media types, with 1 copy offsite."
+    },
+    {
+        "id": 323,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You arrive at a customer's site to fix a printer, but the customer is angry and yelling about the delay. What should you do?",
+        "options": [
+            "Argue back",
+            "Ignore them and start working",
+            "Listen actively and apologize for the delay",
+            "Leave the site immediately"
+        ],
+        "answer": "Listen actively and apologize for the delay",
+        "explanation": "Professionalism requires active listening, not being defensive, and empathizing with the customer's frustration."
+    },
+    {
+        "id": 324,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which document describes the safe handling and disposal procedures for chemical materials like printer toner?",
+        "options": [
+            "SLA",
+            "EULA",
+            "MSDS / SDS",
+            "SOP"
+        ],
+        "answer": "MSDS / SDS",
+        "explanation": "A Material Safety Data Sheet (MSDS) or Safety Data Sheet (SDS) lists hazards and safety measures for chemical products."
+    },
+    {
+        "id": 325,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which wireless security protocol is the most secure among the following options?",
+        "options": [
+            "WEP",
+            "WPA",
+            "WPA2-AES",
+            "WPA2-TKIP"
+        ],
+        "answer": "WPA2-AES",
+        "explanation": "WPA2 with AES (Advanced Encryption Standard) is the modern standard. WEP and WPA are outdated and vulnerable."
+    },
+    {
+        "id": 326,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "What is the first step in the Change Management process?",
+        "options": [
+            "Implement the change",
+            "Request for Change (RFC)",
+            "Rollback plan",
+            "Risk analysis"
+        ],
+        "answer": "Request for Change (RFC)",
+        "explanation": "Change management begins with submitting a formal request (Request forms) outlining the purpose and scope of the change."
+    },
+    {
+        "id": 327,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "Which of the following is considered 'Personally Identifiable Information' (PII)?",
+        "options": [
+            "Operating System Version",
+            "CPU Model",
+            "Social Security Number",
+            "Monitor Resolution"
+        ],
+        "answer": "Social Security Number",
+        "explanation": "PII is any data that can identify a specific individual, such as SSN, full name, or biometric data."
+    },
+    {
+        "id": 328,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A mobile user reports that their screen does not rotate when they turn the device sideways. Which component or setting is likely the issue?",
+        "options": [
+            "Digitizer",
+            "Gyroscope / Accelerometer",
+            "GPS",
+            "Proximity Sensor"
+        ],
+        "answer": "Gyroscope / Accelerometer",
+        "explanation": "The gyroscope and accelerometer detect the device's orientation. If they fail or the rotation lock is on, the screen won't rotate."
+    },
+    {
+        "id": 329,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "When working inside a computer case, what should you wear to prevent damaging components with static electricity?",
+        "options": [
+            "Rubber gloves",
+            "ESD wrist strap",
+            "Safety goggles",
+            "Wool sweater"
+        ],
+        "answer": "ESD wrist strap",
+        "explanation": "An Electrostatic Discharge (ESD) wrist strap grounds the technician to the case, preventing static shock from frying sensitive components."
+    },
+    {
+        "id": 410,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A user installed a new video driver and now Windows crashes with a BSOD immediately after login. What is the best way to fix this?",
+        "options": [
+            "Reinstall Windows",
+            "Boot into Safe Mode and roll back the driver",
+            "Run Windows Memory Diagnostic",
+            "Update the BIOS"
+        ],
+        "answer": "Boot into Safe Mode and roll back the driver",
+        "explanation": "Safe Mode loads minimal drivers. If the new driver is causing the crash, Safe Mode allows you to uninstall or roll it back."
+    },
+    {
+        "id": 411,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A technician needs to connect to a network share \\\\server\\finance and map it to drive letter Z: using the command line. Which command should they use?",
+        "options": [
+            "net share",
+            "net user",
+            "net use",
+            "nslookup"
+        ],
+        "answer": "net use",
+        "explanation": "'net use' is the command used to connect to, remove, and configure connections to shared resources, like mapping drives."
+    },
+    {
+        "id": 412,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user's browser homepage keeps changing to a gambling site, even after they change it back. They also see pop-ups when the browser is closed. What is the most likely cause?",
+        "options": [
+            "Ransomware",
+            "Adware / Spyware",
+            "Rootkit",
+            "Worm"
+        ],
+        "answer": "Adware / Spyware",
+        "explanation": "These are classic symptoms of Adware (serving ads) or Spyware (hijacking browser settings)."
+    },
+    {
+        "id": 413,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You are troubleshooting a CEO's laptop. While fixing it, you see a document on the desktop named 'Layoff_List_2026.docx'. What should you do?",
+        "options": [
+            "Read it to see if you are on the list",
+            "Copy it to a USB drive for backup",
+            "Ignore it and maintain confidentiality",
+            "Ask the CEO about it"
+        ],
+        "answer": "Ignore it and maintain confidentiality",
+        "explanation": "IT professionals must adhere to strict confidentiality. Do not access, copy, or discuss private data unless required for the repair."
+    },
+    {
+        "id": 414,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "A Windows 10 computer fails to boot and says 'Boot Configuration Data is missing'. Which command in the Recovery Environment (WinRE) can fix this?",
+        "options": [
+            "bootrec /rebuildbcd",
+            "diskpart",
+            "format c:",
+            "sfc /scannow"
+        ],
+        "answer": "bootrec /rebuildbcd",
+        "explanation": "'bootrec' is the tool for fixing boot problems. '/rebuildbcd' scans for OS installations and rebuilds the BCD store."
+    },
+    {
+        "id": 415,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "You receive an email from 'HelpDesk' asking for your password to verify your account quota. The link goes to 'helpdesk-support-site.com' instead of your company domain. What attack is this?",
+        "options": [
+            "Spear Phishing",
+            "Zero-day",
+            "Brute Force",
+            "Man-in-the-middle"
+        ],
+        "answer": "Spear Phishing",
+        "explanation": "This is Phishing (specifically Spear Phishing if targeted). Legitimate IT support will NEVER ask for your password via email."
+    },
+    {
+        "id": 416,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "A user wants to run a script every Monday at 9 AM to back up their files. Which Windows tool is best for this?",
+        "options": [
+            "Task Manager",
+            "Task Scheduler",
+            "Device Manager",
+            "Performance Monitor"
+        ],
+        "answer": "Task Scheduler",
+        "explanation": "Task Scheduler allows you to automate tasks (like running scripts) at specific times or triggers."
+    },
+    {
+        "id": 417,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You are trying to delete a folder in Linux but get a 'Permission Denied' error. You are not logged in as root. What command allows you to run the delete command with elevated privileges?",
+        "options": [
+            "chmod",
+            "chown",
+            "sudo",
+            "pwd"
+        ],
+        "answer": "sudo",
+        "explanation": "Preceding a command with 'sudo' runs it with root/administrator privileges, assuming the user is in the sudoers list."
+    },
+    {
+        "id": 418,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "An Android user cannot install a specific app from the Google Play Store. They try to download the .APK file from a website instead. What setting must be enabled to install it?",
+        "options": [
+            "Developer Mode",
+            "Install from unknown sources",
+            "USB Debugging",
+            "Root access"
+        ],
+        "answer": "Install from unknown sources",
+        "explanation": "By default, Android blocks apps from outside the Play Store. Enabling 'Install from unknown sources' allows .APK installation."
+    },
+    {
+        "id": 419,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "Which Windows 11 feature allows you to run a separate, isolated instance of Windows to safely test suspicious software?",
+        "options": [
+            "Windows Sandbox",
+            "Hyper-V",
+            "BitLocker",
+            "Remote Desktop"
+        ],
+        "answer": "Windows Sandbox",
+        "explanation": "Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Once closed, all software and files are deleted."
+    },
+    {
+        "id": 420,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A company requires that all mobile devices be able to be completely wiped if they are lost or stolen. What is this feature called?",
+        "options": [
+            "Geofencing",
+            "Remote Wipe",
+            "Sideloading",
+            "Containerization"
+        ],
+        "answer": "Remote Wipe",
+        "explanation": "Remote Wipe is a Mobile Device Management (MDM) feature that erases all data on a device over the cellular/Wi-Fi network."
+    },
+    {
+        "id": 421,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Before implementing a major patch on a production server, what should you do first according to Change Management best practices?",
+        "options": [
+            "Install the patch immediately",
+            "Create a rollback plan",
+            "Inform the CEO",
+            "Reboot the server"
+        ],
+        "answer": "Create a rollback plan",
+        "explanation": "You must always have a rollback plan (back-out plan) in case the change causes critical failure, so you can restore operations."
+    },
+    {
+        "id": 422,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user calls the help desk claiming to be the CFO and demands a password reset immediately because they have an urgent meeting. They sound angry. What social engineering tactic is this?",
+        "options": [
+            "Urgency and Authority",
+            "Familiarity",
+            "Consensus",
+            "Scarcity"
+        ],
+        "answer": "Urgency and Authority",
+        "explanation": "Social engineers often combine Authority (CFO role) and Urgency (urgent meeting) to pressure technicians into bypassing security protocols."
+    },
+    {
+        "id": 423,
+        "category": "Core 2 (220-1202) - 3.0 Software Troubleshooting",
+        "question": "A mobile device is suffering from extremely short battery life and high data usage. You suspect a specific app is mining cryptocurrency in the background. What is this malware called?",
+        "options": [
+            "Ransomware",
+            "Cryptominer",
+            "Keylogger",
+            "Boot sector virus"
+        ],
+        "answer": "Cryptominer",
+        "explanation": "Cryptominers use the device's CPU/GPU to mine crypto, causing overheating, battery drain, and slow performance."
+    },
+    {
+        "id": 425,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "To increase security for a server room, you want to ensure that if one person enters, they cannot hold the door open for another unauthorized person. What physical control prevents this?",
+        "options": [
+            "Access Control Vestibule (Mantrap)",
+            "Biometric lock",
+            "Video surveillance",
+            "Badge reader"
+        ],
+        "answer": "Access Control Vestibule (Mantrap)",
+        "explanation": "An Access Control Vestibule (formerly called Mantrap) is a double-door system where the first door must close before the second opens, preventing tailgating."
+    },
+    {
+        "id": 426,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which regulation primarily governs the protection of credit card data?",
+        "options": [
+            "GDPR",
+            "HIPAA",
+            "PCI-DSS",
+            "NIST"
+        ],
+        "answer": "PCI-DSS",
+        "explanation": "PCI-DSS (Payment Card Industry Data Security Standard) governs how credit card information is handled and secured."
+    },
+    {
+        "id": 427,
+        "category": "Core 2 (220-1202) - 1.0 Operating Systems",
+        "question": "You need to prevent a specific user from logging in on weekends. Where would you configure 'Logon Hours' in a domain environment?",
+        "options": [
+            "Local Security Policy",
+            "Active Directory Users and Computers",
+            "Task Manager",
+            "Control Panel"
+        ],
+        "answer": "Active Directory Users and Computers",
+        "explanation": "In a Windows Domain environment, user restrictions like Logon Hours are managed centrally in Active Directory."
+    },
+    {
+        "id": 429,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "A customer is explaining a complex problem, but you already know the solution because you fixed the same issue yesterday. What should you do?",
+        "options": [
+            "Interrupt them to save time",
+            "Let them finish explaining before offering the solution",
+            "Start fixing it while they talk",
+            "Tell them you already know what's wrong"
+        ],
+        "answer": "Let them finish explaining before offering the solution",
+        "explanation": "Active listening involves letting the customer finish. Interrupting is considered rude and you might miss a crucial detail unique to this instance."
+    },
+    {
+        "id": 432,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "You are reviewing a script and see the following code: 'for (i=0; i<10; i++) { ... }'. What type of scripting construct is this?",
+        "options": [
+            "Variable declaration",
+            "Loop",
+            "Comment",
+            "Constant"
+        ],
+        "answer": "Loop",
+        "explanation": "This is a classic 'For Loop' structure used to repeat a block of code a specific number of times (in this case, 10 times)."
+    },
+    {
+        "id": 433,
+        "category": "Core 2 (220-1202) - 2.0 Security",
+        "question": "A user in the HR department works with sensitive employee data in an open-plan office. They are worried about colleagues walking by and seeing the screen. What physical security control should you install?",
+        "options": [
+            "Biometric lock",
+            "Privacy filter",
+            "Kensington lock",
+            "Screen saver password"
+        ],
+        "answer": "Privacy filter",
+        "explanation": "A Privacy Filter (screen guard) limits the viewing angle of the monitor so only the person sitting directly in front can read it, preventing 'Shoulder Surfing'."
+    },
+    {
+        "id": 435,
+        "category": "Core 2 (220-1202) - 4.0 Operational Procedures",
+        "question": "Which regulation applies specifically to the protection of data for citizens of the European Union (EU)?",
+        "options": [
+            "HIPAA",
+            "GDPR",
+            "PCI-DSS",
+            "NIST"
+        ],
+        "answer": "GDPR",
+        "explanation": "GDPR (General Data Protection Regulation) is the EU regulation on data protection and privacy."
+    }
+]

@@ -3,37 +3,92 @@ import json
 import os
 
 # --- 1. 配置页面 ---
-st.set_page_config(page_title="CompTIA A+ 2026 刷题神器", page_icon="🛡️", layout="centered")
+st.set_page_config(page_title="CompTIA A+ 刷题神器", page_icon="🛡️", layout="centered")
 
-# --- 2. 加载数据函数 ---
-#@st.cache_data
-def load_questions():
-    # 尝试加载本地 json 文件
-    if os.path.exists('questions.json'):
-        with open('questions.json', 'r') as f:
+# ================= 🔐 安全门卫代码 (保留) =================
+if "password_correct" not in st.session_state:
+    st.session_state.password_correct = False
+
+def check_password():
+    # 如果没有在 secrets 配置密码，直接放行 (方便本地测试)
+    if "my_password" not in st.secrets:
+        return True
+        
+    if st.session_state.password_correct:
+        return True
+
+    st.text_input("请输入访问密码:", type="password", key="password_input", on_change=password_entered)
+    return False
+
+def password_entered():
+    if st.session_state["password_input"] == st.secrets["my_password"]:
+        st.session_state.password_correct = True
+        del st.session_state["password_input"]
+    else:
+        st.error("❌ 密码错误")
+
+if not check_password():
+    st.stop()
+# ========================================================
+
+# --- 2. 动态加载数据函数 ---
+def load_questions(filename):
+    if os.path.exists(filename):
+        with open(filename, 'r') as f:
             return json.load(f)
     return []
 
-# --- 3. 初始化 Session State (关键：用于记录状态) ---
+# --- 3. 初始化 Session State ---
+if 'current_subject' not in st.session_state:
+    # 默认选择第一个
+    st.session_state.current_subject = "Core 1 (220-1201) - 基础" 
 if 'current_q_index' not in st.session_state:
     st.session_state.current_q_index = 0
-if 'score' not in st.session_state:
-    st.session_state.score = 0
 if 'mistakes' not in st.session_state:
-    st.session_state.mistakes = [] # 存储错题 ID
-if 'quiz_mode' not in st.session_state:
-    st.session_state.quiz_mode = 'practice' # practice 或 review
+    st.session_state.mistakes = [] 
 if 'user_answers' not in st.session_state:
-    st.session_state.user_answers = {} # 记录用户选了什么
+    st.session_state.user_answers = {} 
 
-# 加载题目
-questions = load_questions()
-
-# --- 4. 侧边栏布局 (防崩盘修复版) ---
+# --- 4. 侧边栏布局 ---
 with st.sidebar:
     st.header("⚙️ 学习控制台")
-    st.write(f"总题库数量: {len(questions)}")
     
+    # === 科目选择器 (新增了 Core 2 ET 选项) ===
+    subject_selection = st.radio(
+        "📚 选择考试科目:", 
+        [
+            "Core 1 (220-1201) - 基础", 
+            "Core 1 (220-1201) - ET高难版", 
+            "Core 2 (220-1202) - 基础",
+            "Core 2 (220-1202) - ET高难版"  # <--- 新增这项
+        ]
+    )
+    
+    # === 检测科目切换并重置进度 ===
+    if subject_selection != st.session_state.current_subject:
+        st.session_state.current_subject = subject_selection
+        st.session_state.current_q_index = 0
+        st.session_state.user_answers = {}
+        st.rerun()
+
+    # === 根据选择确定文件名 (逻辑更新) ===
+    if "Core 1" in subject_selection:
+        if "ET" in subject_selection:
+            current_file = "et_questions_core1.json"
+        else:
+            current_file = "questions_core1.json"
+    else: # Core 2
+        if "ET" in subject_selection:
+            current_file = "et_questions_core2.json" # <--- 新增映射
+        else:
+            current_file = "questions_core2.json"
+
+    # 加载对应题库
+    questions = load_questions(current_file)
+    st.write(f"当前题库数量: {len(questions)}")
+    
+    st.divider()
+
     # 模式切换
     mode = st.radio("选择模式:", ["📝 模拟考试 (Practice)", "📕 错题回顾 (Review)"])
     
@@ -42,47 +97,42 @@ with st.sidebar:
         active_questions = questions
     else:
         st.session_state.quiz_mode = 'review'
-        # 筛选出出错的题目
         active_questions = [q for q in questions if q['id'] in st.session_state.mistakes]
 
-    # --- 关键修复点：先纠正索引，再画进度条 ---
-    # 如果当前页码超过了题目总数（比如从100题的模式切到只有1题的错题本），强制归零
+    # 防崩盘逻辑
     if len(active_questions) > 0 and st.session_state.current_q_index >= len(active_questions):
         st.session_state.current_q_index = 0
 
     # 进度条
     if len(active_questions) > 0:
-        # 现在的 index 肯定是安全的
         progress = st.session_state.current_q_index / len(active_questions)
         st.progress(progress)
         st.write(f"进度: {st.session_state.current_q_index + 1} / {len(active_questions)}")
     else:
         if st.session_state.quiz_mode == 'review':
-            st.info("👏 目前没有错题！")
-            st.caption("去练习模式多刷几道吧~")
+            st.info("👏 当前科目没有错题！")
     
     st.divider()
     
     # 重置按钮
-    if st.button("🔄 重置所有进度"):
+    if st.button("🔄 重置当前进度"):
         st.session_state.current_q_index = 0
-        st.session_state.score = 0
         st.session_state.user_answers = {}
-        st.session_state.mistakes = [] # 可选：是否连错题本也清空
         st.rerun()
 
-# --- 5. 主界面逻辑 (含跳转功能版) ---
+# --- 5. 主界面逻辑 ---
 
-st.title("🛡️ CompTIA A+ (Series 1200)")
+st.title(f"🛡️ {subject_selection}")
 
 if not active_questions:
     if st.session_state.quiz_mode == 'review':
-        st.success("🎉 太棒了！你目前没有错题记录，或者已经全部复习完毕。")
-        st.info("请切换回“模拟考试”模式继续刷题。")
+        st.success("🎉 太棒了！本轮复习完毕。")
     else:
-        st.error("未找到题目数据，请检查 questions.json 文件。")
+        # 如果文件不存在，给出更明确的提示
+        st.error(f"⚠️ 未找到题库文件: `{current_file}`")
+        st.info("请确认你是否已创建该文件并上传到 GitHub。")
 else:
-    # --- 1. 防止索引越界 (安全检查) ---
+    # --- 1. 防止索引越界 ---
     if st.session_state.current_q_index >= len(active_questions):
         st.session_state.current_q_index = 0
         
@@ -91,14 +141,18 @@ else:
 
     # --- 2. 显示题目 ---
     st.markdown(f"### Q{st.session_state.current_q_index + 1}: {current_q['question']}")
-    st.caption(f"Category: {current_q['category']}")
+    
+    # 动态标签颜色
+    if "Core 1" in current_q['category']:
+        st.caption(f"🏷️ :blue[{current_q['category']}]")
+    else:
+        st.caption(f"🏷️ :red[{current_q['category']}]")
 
     # 检查是否已回答
     user_has_answered = q_id in st.session_state.user_answers
 
-    # --- 3. 答题区域 (Scenario A: 未答 | Scenario B: 已答) ---
+    # --- 3. 答题区域 ---
     if not user_has_answered:
-        # [未回答] 显示表单和提交按钮
         with st.form(key=f"form_{q_id}"):
             user_choice = st.radio("请选择答案:", current_q['options'], index=None)
             submit_btn = st.form_submit_button("提交答案")
@@ -111,15 +165,8 @@ else:
                 st.warning("⚠️ 请先选择一个选项。")
 
     else:
-        # [已回答] 显示结果和解析（只读模式）
         my_choice = st.session_state.user_answers[q_id]
-        
-        st.radio(
-            "请选择答案:", 
-            current_q['options'], 
-            index=current_q['options'].index(my_choice), 
-            disabled=True 
-        )
+        st.radio("请选择答案:", current_q['options'], index=current_q['options'].index(my_choice), disabled=True)
 
         if my_choice == current_q['answer']:
             st.success("✅ 回答正确！")
@@ -130,36 +177,26 @@ else:
         
         st.info(f"💡 **解析:** {current_q['explanation']}")
         
-        # 下一题按钮
-        if st.session_state.current_q_index < len(active_questions) - 1:
-            if st.button("下一题 ➡️"):
-                st.session_state.current_q_index += 1
-                st.rerun()
-        else:
-            st.success("🏁 本轮题目已做完！")
-            if st.button("🔄 重新开始"):
-                st.session_state.current_q_index = 0
-                st.rerun()
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            if st.session_state.current_q_index < len(active_questions) - 1:
+                if st.button("下一题 ➡️"):
+                    st.session_state.current_q_index += 1
+                    st.rerun()
+            else:
+                st.success("🏁 本章题目已做完！")
+                if st.button("🔄 重新开始"):
+                    st.session_state.current_q_index = 0
+                    st.rerun()
 
-    # --- 4. 底部跳转栏 (新增功能) ---
-    st.markdown("---") # 分割线
+    # --- 4. 底部跳转栏 ---
+    st.markdown("---")
     st.write("📍 **快速跳转**")
-    
     col_jump1, col_jump2 = st.columns([4, 1])
-    
     with col_jump1:
-        # 输入框：默认显示当前题号，最大值限制为题目总数
-        target_q = st.number_input(
-            "输入题号 (1 - {})".format(len(active_questions)),
-            min_value=1, 
-            max_value=len(active_questions), 
-            value=st.session_state.current_q_index + 1
-        )
-        
+        target_q = st.number_input("输入题号", min_value=1, max_value=len(active_questions), value=st.session_state.current_q_index + 1)
     with col_jump2:
-        st.write("") # 占位符，为了对齐
-        st.write("") 
+        st.write(""); st.write("")
         if st.button("Go 🚀"):
-            # 注意：用户输入的是 1 开始的，我们要转成 0 开始的索引
             st.session_state.current_q_index = target_q - 1
             st.rerun()

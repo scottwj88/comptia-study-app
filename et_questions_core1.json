@@ -1,0 +1,122 @@
+[
+    {
+        "id": 501,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A technician is replacing a broken screen on a laptop. After removing the bezel and the broken panel, the technician notices a pair of wires (one black, one white) that were disconnected. What is the PRIMARY function of these wires?",
+        "options": ["Webcam connection", "Wi-Fi antenna", "Microphone", "Display power inverter"],
+        "answer": "Wi-Fi antenna",
+        "explanation": "In most laptops, the Wi-Fi antennas are routed through the screen bezel to the top of the display for better signal reception. The black and white (aux/main) wires connect to the wireless card on the motherboard."
+    },
+    {
+        "id": 502,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A network administrator is designing a new Wi-Fi network for a high-density office building. They want to minimize interference from neighboring networks and utilize the widest possible channels for high throughput. Which standard and frequency band should they deploying?",
+        "options": ["802.11ac on 5 GHz", "802.11ax on 2.4 GHz", "802.11ax on 6 GHz", "802.11n on 5 GHz"],
+        "answer": "802.11ax on 6 GHz",
+        "explanation": "802.11ax (Wi-Fi 6E) on the 6 GHz band provides the most available spectrum, allowing for wider channels (160MHz) without the congestion found in the 2.4 GHz and 5 GHz bands[cite: 139]."
+    },
+    {
+        "id": 503,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "A video editor complains that their workstation is running out of storage space. They need a drive that offers the fastest possible read/write speeds for editing 8K raw footage. The motherboard has an available PCIe x4 slot and an M.2 slot. Which drive should you recommend?",
+        "options": ["7200 RPM SATA HDD", "SATA SSD (2.5 inch)", "NVMe M.2 SSD", "Hybrid Drive (SSHD)"],
+        "answer": "NVMe M.2 SSD",
+        "explanation": "NVMe drives use the PCIe bus directly, offering significantly higher throughput (up to 7000+ MB/s) compared to SATA SSDs (~550 MB/s) or HDDs, making them ideal for 8K video editing[cite: 333, 340]."
+    },
+    {
+        "id": 504,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user reports that their laser printer is printing pages that are completely black. Which component is MOST likely faulty?",
+        "options": ["Fuser", "Primary Corona Wire / Charge Roller", "Transfer Roller", "Pickup Roller"],
+        "answer": "Primary Corona Wire / Charge Roller",
+        "explanation": "A completely black page indicates that the drum was not charged properly. If the Primary Corona Wire or Charge Roller fails to apply a negative charge to the drum, toner will stick to the entire drum surface."
+    },
+    {
+        "id": 505,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "You are configuring a firewall for a mail server. You need to ensure that the server can securely send email to other mail servers. Which port should you ensure is OPEN outbound?",
+        "options": ["TCP 25", "TCP 110", "TCP 143", "TCP 587"],
+        "answer": "TCP 587",
+        "explanation": "While port 25 is for standard SMTP, port 587 is the standard for secure SMTP submission (using TLS). Port 110 is POP3 and 143 is IMAP, which are for receiving, not sending[cite: 122]."
+    },
+    {
+        "id": 506,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "A gaming enthusiast wants to build a PC with custom liquid cooling. They have purchased a CPU block, a reservoir, and a radiator. What other CRITICAL component is required to move the coolant through the loop?",
+        "options": ["Heat sink", "Pump", "Thermal paste", "Fan controller"],
+        "answer": "Pump",
+        "explanation": "In a liquid cooling system, the pump is the active component responsible for circulating the liquid coolant through the blocks and radiator[cite: 399]."
+    },
+    {
+        "id": 507,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A projector in a meeting room turns on, displays the splash screen for a few seconds, and then the image immediately goes dark, although the fan continues to run loudly. The LED status light is flashing red. What is the MOST likely cause?",
+        "options": ["The bulb has blown", "The projector is overheating", "The HDMI cable is faulty", "Incorrect input source selected"],
+        "answer": "The bulb has blown",
+        "explanation": "If the unit powers on but the lamp goes out immediately (or never strikes) and gives a specific error LED, it usually indicates a burnt-out bulb. Overheating usually takes a few minutes to trigger a shutdown[cite: 530]."
+    },
+    {
+        "id": 508,
+        "category": "Core 1 (220-1201) - 4.0 Virtualization",
+        "question": "A developer needs to run a Type 1 hypervisor on a server to host multiple virtual machines. Which of the following requirements is specific to a Type 1 hypervisor installation compared to Type 2?",
+        "options": ["It requires a host operating system like Windows.", "It must be installed directly on the bare-metal hardware.", "It requires less RAM than Type 2.", "It does not support hardware-assisted virtualization."],
+        "answer": "It must be installed directly on the bare-metal hardware.",
+        "explanation": "Type 1 hypervisors (Bare Metal) run directly on the hardware without an underlying host OS. Type 2 (Hosted) runs as an app inside an OS [cite: 479-480]."
+    },
+    {
+        "id": 509,
+        "category": "Core 1 (220-1201) - 1.0 Mobile Devices",
+        "question": "A user travels internationally and wants to avoid roaming charges. They buy a local data plan but keep their physical SIM card from their home country for calls. Which technology allows them to add the second plan without inserting a physical card?",
+        "options": ["Micro-SD", "eSIM", "NFC", "VPN"],
+        "answer": "eSIM",
+        "explanation": "An eSIM (Embedded SIM) allows users to activate a cellular plan digitally without having to use a physical nano-SIM card, enabling dual-SIM functionality[cite: 91]."
+    },
+    {
+        "id": 510,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "You are setting up a raid array for a database server that requires high redundancy. You have 4 hard drives. Which RAID level provides the best balance of redundancy and performance, allowing for up to 2 drive failures (in different mirrors)?",
+        "options": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
+        "answer": "RAID 10",
+        "explanation": "RAID 10 (Stripe of Mirrors) requires at least 4 drives. It offers the speed of RAID 0 and the redundancy of RAID 1. It can survive multiple drive failures as long as they are not in the same mirrored pair[cite: 344]."
+    },
+    {
+        "id": 511,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "A SOHO user reports that their internet connection is intermittent. You check the modem logs and see frequent T3 timeouts. You suspect the issue is with the physical cabling coming into the house. Which cable type connects the ISP's demarcation point to a cable modem?",
+        "options": ["Cat 6e (Twisted Pair)", "RG-6 (Coaxial)", "Fiber Optic", "RJ-11 (Telephone)"],
+        "answer": "RG-6 (Coaxial)",
+        "explanation": "Cable modems typically connect to the ISP via Coaxial cables (RG-6 or RG-59) using an F-type connector[cite: 277, 303]."
+    },
+    {
+        "id": 512,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A workstation repeatedly fails to boot, emitting a continuous series of short beeps. No video is displayed. Which component should you reseat or replace FIRST?",
+        "options": ["Power Supply", "Hard Drive", "RAM", "CMOS Battery"],
+        "answer": "RAM",
+        "explanation": "Beep codes vary by manufacturer, but a continuous series of beeps or repeating short beeps is a classic sign of a Memory (RAM) error or detection failure[cite: 501]."
+    },
+    {
+        "id": 513,
+        "category": "Core 1 (220-1201) - 3.0 Hardware",
+        "question": "Which USB standard introduced the reversible Type-C connector and supports power delivery up to 100W (or more in newer revisions)?",
+        "options": ["USB 2.0", "USB 3.0", "USB 3.1 / 3.2", "USB 1.1"],
+        "answer": "USB 3.1 / 3.2",
+        "explanation": "While USB-C is just the connector shape, it was popularized with USB 3.1. The key here is the combination of the reversible connector and high Power Delivery (PD) capability[cite: 287, 310]."
+    },
+    {
+        "id": 514,
+        "category": "Core 1 (220-1201) - 5.0 Troubleshooting",
+        "question": "A user's laptop battery is not holding a charge. You inspect the device and notice the trackpad is bulging upward and the case seam is splitting. What is the safest course of action?",
+        "options": ["Press down on the trackpad to snap it back into place.", "Replace the battery immediately in the office.", "Quarantine the device and dispose of the battery according to hazardous waste procedures.", "Freeze the laptop to shrink the battery."],
+        "answer": "Quarantine the device and dispose of the battery according to hazardous waste procedures.",
+        "explanation": "A swollen battery is a fire hazard. It should not be compressed or punctured. It requires careful handling and proper disposal, not just a simple replacement[cite: 542]."
+    },
+    {
+        "id": 515,
+        "category": "Core 1 (220-1201) - 2.0 Networking",
+        "question": "You are installing an IP camera that needs to be placed in a location without a nearby power outlet. The switch in the server room supports 802.3af. What feature allows the camera to receive power through the network cable?",
+        "options": ["QoS", "PoE", "VLAN", "Port Forwarding"],
+        "answer": "PoE",
+        "explanation": "Power over Ethernet (PoE) allows electrical power to be carried on network cables (Cat 5e/6) along with data, ideal for IP cameras and VoIP phones[cite: 201]."
+    }
+]
